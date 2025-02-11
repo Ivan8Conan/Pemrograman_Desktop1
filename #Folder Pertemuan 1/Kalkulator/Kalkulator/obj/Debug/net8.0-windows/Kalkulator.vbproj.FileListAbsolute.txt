@@ -1,0 +1,33 @@
+C:\Users\Ivan\source\repos\Kalkulator\Kalkulator\bin\Debug\net8.0-windows\Kalkulator.exe
+C:\Users\Ivan\source\repos\Kalkulator\Kalkulator\bin\Debug\net8.0-windows\Kalkulator.deps.json
+C:\Users\Ivan\source\repos\Kalkulator\Kalkulator\bin\Debug\net8.0-windows\Kalkulator.runtimeconfig.json
+C:\Users\Ivan\source\repos\Kalkulator\Kalkulator\bin\Debug\net8.0-windows\Kalkulator.dll
+C:\Users\Ivan\source\repos\Kalkulator\Kalkulator\bin\Debug\net8.0-windows\Kalkulator.pdb
+C:\Users\Ivan\source\repos\Kalkulator\Kalkulator\obj\Debug\net8.0-windows\Kalkulator.Form1.resources
+C:\Users\Ivan\source\repos\Kalkulator\Kalkulator\obj\Debug\net8.0-windows\Kalkulator.vbproj.GenerateResource.cache
+C:\Users\Ivan\source\repos\Kalkulator\Kalkulator\obj\Debug\net8.0-windows\Kalkulator.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ivan\source\repos\Kalkulator\Kalkulator\obj\Debug\net8.0-windows\Kalkulator.AssemblyInfoInputs.cache
+C:\Users\Ivan\source\repos\Kalkulator\Kalkulator\obj\Debug\net8.0-windows\Kalkulator.AssemblyInfo.vb
+C:\Users\Ivan\source\repos\Kalkulator\Kalkulator\obj\Debug\net8.0-windows\Kalkulator.vbproj.CoreCompileInputs.cache
+C:\Users\Ivan\source\repos\Kalkulator\Kalkulator\obj\Debug\net8.0-windows\Kalkulator.dll
+C:\Users\Ivan\source\repos\Kalkulator\Kalkulator\obj\Debug\net8.0-windows\refint\Kalkulator.dll
+C:\Users\Ivan\source\repos\Kalkulator\Kalkulator\obj\Debug\net8.0-windows\Kalkulator.pdb
+C:\Users\Ivan\source\repos\Kalkulator\Kalkulator\obj\Debug\net8.0-windows\Kalkulator.genruntimeconfig.cache
+C:\Users\Ivan\source\repos\Kalkulator\Kalkulator\obj\Debug\net8.0-windows\ref\Kalkulator.dll
+C:\Users\Ivan\OneDrive - Duta Wacana Christian University\SEMESTER 2\Semester 6\Pemrograman Desktop\Tugas\Pemrograman_Desktop\Kalkulator\Kalkulator\bin\Debug\net8.0-windows\Kalkulator.exe
+C:\Users\Ivan\OneDrive - Duta Wacana Christian University\SEMESTER 2\Semester 6\Pemrograman Desktop\Tugas\Pemrograman_Desktop\Kalkulator\Kalkulator\bin\Debug\net8.0-windows\Kalkulator.deps.json
+C:\Users\Ivan\OneDrive - Duta Wacana Christian University\SEMESTER 2\Semester 6\Pemrograman Desktop\Tugas\Pemrograman_Desktop\Kalkulator\Kalkulator\bin\Debug\net8.0-windows\Kalkulator.runtimeconfig.json
+C:\Users\Ivan\OneDrive - Duta Wacana Christian University\SEMESTER 2\Semester 6\Pemrograman Desktop\Tugas\Pemrograman_Desktop\Kalkulator\Kalkulator\bin\Debug\net8.0-windows\Kalkulator.dll
+C:\Users\Ivan\OneDrive - Duta Wacana Christian University\SEMESTER 2\Semester 6\Pemrograman Desktop\Tugas\Pemrograman_Desktop\Kalkulator\Kalkulator\bin\Debug\net8.0-windows\Kalkulator.pdb
+C:\Users\Ivan\OneDrive - Duta Wacana Christian University\SEMESTER 2\Semester 6\Pemrograman Desktop\Tugas\Pemrograman_Desktop\Kalkulator\Kalkulator\obj\Debug\net8.0-windows\Kalkulator.Form1.resources
+C:\Users\Ivan\OneDrive - Duta Wacana Christian University\SEMESTER 2\Semester 6\Pemrograman Desktop\Tugas\Pemrograman_Desktop\Kalkulator\Kalkulator\obj\Debug\net8.0-windows\Kalkulator.vbproj.GenerateResource.cache
+C:\Users\Ivan\OneDrive - Duta Wacana Christian University\SEMESTER 2\Semester 6\Pemrograman Desktop\Tugas\Pemrograman_Desktop\Kalkulator\Kalkulator\obj\Debug\net8.0-windows\Kalkulator.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ivan\OneDrive - Duta Wacana Christian University\SEMESTER 2\Semester 6\Pemrograman Desktop\Tugas\Pemrograman_Desktop\Kalkulator\Kalkulator\obj\Debug\net8.0-windows\Kalkulator.AssemblyInfoInputs.cache
+C:\Users\Ivan\OneDrive - Duta Wacana Christian University\SEMESTER 2\Semester 6\Pemrograman Desktop\Tugas\Pemrograman_Desktop\Kalkulator\Kalkulator\obj\Debug\net8.0-windows\Kalkulator.AssemblyInfo.vb
+C:\Users\Ivan\OneDrive - Duta Wacana Christian University\SEMESTER 2\Semester 6\Pemrograman Desktop\Tugas\Pemrograman_Desktop\Kalkulator\Kalkulator\obj\Debug\net8.0-windows\Kalkulator.vbproj.CoreCompileInputs.cache
+C:\Users\Ivan\OneDrive - Duta Wacana Christian University\SEMESTER 2\Semester 6\Pemrograman Desktop\Tugas\Pemrograman_Desktop\Kalkulator\Kalkulator\obj\Debug\net8.0-windows\Kalkulator.sourcelink.json
+C:\Users\Ivan\OneDrive - Duta Wacana Christian University\SEMESTER 2\Semester 6\Pemrograman Desktop\Tugas\Pemrograman_Desktop\Kalkulator\Kalkulator\obj\Debug\net8.0-windows\Kalkulator.dll
+C:\Users\Ivan\OneDrive - Duta Wacana Christian University\SEMESTER 2\Semester 6\Pemrograman Desktop\Tugas\Pemrograman_Desktop\Kalkulator\Kalkulator\obj\Debug\net8.0-windows\refint\Kalkulator.dll
+C:\Users\Ivan\OneDrive - Duta Wacana Christian University\SEMESTER 2\Semester 6\Pemrograman Desktop\Tugas\Pemrograman_Desktop\Kalkulator\Kalkulator\obj\Debug\net8.0-windows\Kalkulator.pdb
+C:\Users\Ivan\OneDrive - Duta Wacana Christian University\SEMESTER 2\Semester 6\Pemrograman Desktop\Tugas\Pemrograman_Desktop\Kalkulator\Kalkulator\obj\Debug\net8.0-windows\Kalkulator.genruntimeconfig.cache
+C:\Users\Ivan\OneDrive - Duta Wacana Christian University\SEMESTER 2\Semester 6\Pemrograman Desktop\Tugas\Pemrograman_Desktop\Kalkulator\Kalkulator\obj\Debug\net8.0-windows\ref\Kalkulator.dll
