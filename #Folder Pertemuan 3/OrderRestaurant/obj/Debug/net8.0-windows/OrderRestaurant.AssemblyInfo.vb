@@ -16,7 +16,7 @@ Imports System.Reflection
 <Assembly: System.Reflection.AssemblyCompanyAttribute("OrderRestaurant"),  _
  Assembly: System.Reflection.AssemblyConfigurationAttribute("Debug"),  _
  Assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0"),  _
- Assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c06b1df437404414afe4ff4ce9fd7e09b6e7a274"),  _
+ Assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ef17ace7adeac33110d7b3dcf46eea3e973b0852"),  _
  Assembly: System.Reflection.AssemblyProductAttribute("OrderRestaurant"),  _
  Assembly: System.Reflection.AssemblyTitleAttribute("OrderRestaurant"),  _
  Assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0"),  _
