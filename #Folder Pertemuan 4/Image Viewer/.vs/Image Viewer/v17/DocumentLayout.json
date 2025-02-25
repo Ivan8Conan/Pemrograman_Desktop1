@@ -1,0 +1,70 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\1. Materi Kuliah\\Sem 6\\Pemrograman Desktop\\Minggu 4\\Folder Pertemuan 4\\Image Viewer\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5AEE020A-7178-4A29-8BC0-89F4CFEC2415}|Image Viewer\\Image Viewer.vbproj|d:\\1. materi kuliah\\sem 6\\pemrograman desktop\\minggu 4\\folder pertemuan 4\\image viewer\\image viewer\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{5AEE020A-7178-4A29-8BC0-89F4CFEC2415}|Image Viewer\\Image Viewer.vbproj|solutionrelative:image viewer\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5AEE020A-7178-4A29-8BC0-89F4CFEC2415}|Image Viewer\\Image Viewer.vbproj|d:\\1. materi kuliah\\sem 6\\pemrograman desktop\\minggu 4\\folder pertemuan 4\\image viewer\\image viewer\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{5AEE020A-7178-4A29-8BC0-89F4CFEC2415}|Image Viewer\\Image Viewer.vbproj|solutionrelative:image viewer\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5AEE020A-7178-4A29-8BC0-89F4CFEC2415}|Image Viewer\\Image Viewer.vbproj|d:\\1. materi kuliah\\sem 6\\pemrograman desktop\\minggu 4\\folder pertemuan 4\\image viewer\\image viewer\\form1.designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{5AEE020A-7178-4A29-8BC0-89F4CFEC2415}|Image Viewer\\Image Viewer.vbproj|solutionrelative:image viewer\\form1.designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.vb",
+              "DocumentMoniker": "D:\\1. Materi Kuliah\\Sem 6\\Pemrograman Desktop\\Minggu 4\\Folder Pertemuan 4\\Image Viewer\\Image Viewer\\Form1.vb",
+              "RelativeDocumentMoniker": "Image Viewer\\Form1.vb",
+              "ToolTip": "D:\\1. Materi Kuliah\\Sem 6\\Pemrograman Desktop\\Minggu 4\\Folder Pertemuan 4\\Image Viewer\\Image Viewer\\Form1.vb",
+              "RelativeToolTip": "Image Viewer\\Form1.vb",
+              "ViewState": "AgIAAI8AAAAAAAAAAAAgwKQAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-02-25T02:27:10.474Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form1.Designer.vb",
+              "DocumentMoniker": "D:\\1. Materi Kuliah\\Sem 6\\Pemrograman Desktop\\Minggu 4\\Folder Pertemuan 4\\Image Viewer\\Image Viewer\\Form1.Designer.vb",
+              "RelativeDocumentMoniker": "Image Viewer\\Form1.Designer.vb",
+              "ToolTip": "D:\\1. Materi Kuliah\\Sem 6\\Pemrograman Desktop\\Minggu 4\\Folder Pertemuan 4\\Image Viewer\\Image Viewer\\Form1.Designer.vb",
+              "RelativeToolTip": "Image Viewer\\Form1.Designer.vb",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-02-25T02:22:20.372Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.vb [Design]",
+              "DocumentMoniker": "D:\\1. Materi Kuliah\\Sem 6\\Pemrograman Desktop\\Minggu 4\\Folder Pertemuan 4\\Image Viewer\\Image Viewer\\Form1.vb",
+              "RelativeDocumentMoniker": "Image Viewer\\Form1.vb",
+              "ToolTip": "D:\\1. Materi Kuliah\\Sem 6\\Pemrograman Desktop\\Minggu 4\\Folder Pertemuan 4\\Image Viewer\\Image Viewer\\Form1.vb [Design]",
+              "RelativeToolTip": "Image Viewer\\Form1.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-02-25T01:39:55.957Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
