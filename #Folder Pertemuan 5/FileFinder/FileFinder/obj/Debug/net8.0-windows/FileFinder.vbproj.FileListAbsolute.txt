@@ -1,0 +1,17 @@
+C:\Pemrograman_Desktop\#Folder Pertemuan 5\FileFinder\FileFinder\bin\Debug\net8.0-windows\FileFinder.exe
+C:\Pemrograman_Desktop\#Folder Pertemuan 5\FileFinder\FileFinder\bin\Debug\net8.0-windows\FileFinder.deps.json
+C:\Pemrograman_Desktop\#Folder Pertemuan 5\FileFinder\FileFinder\bin\Debug\net8.0-windows\FileFinder.runtimeconfig.json
+C:\Pemrograman_Desktop\#Folder Pertemuan 5\FileFinder\FileFinder\bin\Debug\net8.0-windows\FileFinder.dll
+C:\Pemrograman_Desktop\#Folder Pertemuan 5\FileFinder\FileFinder\bin\Debug\net8.0-windows\FileFinder.pdb
+C:\Pemrograman_Desktop\#Folder Pertemuan 5\FileFinder\FileFinder\obj\Debug\net8.0-windows\FileFinder.Form1.resources
+C:\Pemrograman_Desktop\#Folder Pertemuan 5\FileFinder\FileFinder\obj\Debug\net8.0-windows\FileFinder.vbproj.GenerateResource.cache
+C:\Pemrograman_Desktop\#Folder Pertemuan 5\FileFinder\FileFinder\obj\Debug\net8.0-windows\FileFinder.GeneratedMSBuildEditorConfig.editorconfig
+C:\Pemrograman_Desktop\#Folder Pertemuan 5\FileFinder\FileFinder\obj\Debug\net8.0-windows\FileFinder.AssemblyInfoInputs.cache
+C:\Pemrograman_Desktop\#Folder Pertemuan 5\FileFinder\FileFinder\obj\Debug\net8.0-windows\FileFinder.AssemblyInfo.vb
+C:\Pemrograman_Desktop\#Folder Pertemuan 5\FileFinder\FileFinder\obj\Debug\net8.0-windows\FileFinder.vbproj.CoreCompileInputs.cache
+C:\Pemrograman_Desktop\#Folder Pertemuan 5\FileFinder\FileFinder\obj\Debug\net8.0-windows\FileFinder.sourcelink.json
+C:\Pemrograman_Desktop\#Folder Pertemuan 5\FileFinder\FileFinder\obj\Debug\net8.0-windows\FileFinder.dll
+C:\Pemrograman_Desktop\#Folder Pertemuan 5\FileFinder\FileFinder\obj\Debug\net8.0-windows\refint\FileFinder.dll
+C:\Pemrograman_Desktop\#Folder Pertemuan 5\FileFinder\FileFinder\obj\Debug\net8.0-windows\FileFinder.pdb
+C:\Pemrograman_Desktop\#Folder Pertemuan 5\FileFinder\FileFinder\obj\Debug\net8.0-windows\FileFinder.genruntimeconfig.cache
+C:\Pemrograman_Desktop\#Folder Pertemuan 5\FileFinder\FileFinder\obj\Debug\net8.0-windows\ref\FileFinder.dll
