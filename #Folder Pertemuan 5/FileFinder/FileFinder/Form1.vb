@@ -273,4 +273,50 @@ Public Class Form1
             ToolStripProgressBar1.Value = 0
         End If
     End Sub
+
+    'Fungsi menghapus file terpilih dari hasil pencarian
+    Private Sub DeleteSelectedFile()
+        If lvFile.SelectedItems.Count = 1 Then
+            Dim selectedFile As String = lvFile.SelectedItems(0).Tag
+            If MessageBox.Show("Apakah Anda yakin ingin menghapus file ini?", "Konfirmasi", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) = DialogResult.Yes Then
+                Try
+                    System.IO.File.Delete(selectedFile)
+                    lvFile.Items.Remove(lvFile.SelectedItems(0))
+                    MessageBox.Show("File berhasil dihapus.", "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                Catch ex As Exception
+                    MessageBox.Show("Gagal menghapus file: " & ex.Message, "Kesalahan", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                End Try
+            End If
+        End If
+    End Sub
+
+    ' Fungsi untuk mengganti nama file terpilih dari hasil pencarian
+    Private Sub RenameSelectedFile()
+        If lvFile.SelectedItems.Count = 1 Then
+            Dim selectedFile As String = lvFile.SelectedItems(0).Tag
+            Dim newName As String = InputBox("Masukkan nama baru untuk file:", "Ganti Nama File", Path.GetFileName(selectedFile))
+            If Not String.IsNullOrEmpty(newName) Then
+                Try
+                    Dim newPath As String = Path.Combine(Path.GetDirectoryName(selectedFile), newName)
+                    System.IO.File.Move(selectedFile, newPath)
+                    lvFile.SelectedItems(0).Tag = newPath
+                    lvFile.SelectedItems(0).SubItems(0).Text = Path.GetFileNameWithoutExtension(newName)
+                    MessageBox.Show("File berhasil diubah namanya.", "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                Catch ex As Exception
+                    MessageBox.Show("Gagal mengganti nama file: " & ex.Message, "Kesalahan", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                End Try
+            End If
+        End If
+    End Sub
+
+    Private Sub lvFile_MouseClick(sender As Object, e As MouseEventArgs) Handles lvFile.MouseClick
+        If e.Button = MouseButtons.Right Then
+            Dim contextMenu As New ContextMenuStrip()
+            Dim deleteMenuItem As New ToolStripMenuItem("Hapus File", Nothing, AddressOf DeleteSelectedFile)
+            Dim renameMenuItem As New ToolStripMenuItem("Ganti Nama File", Nothing, AddressOf RenameSelectedFile)
+            contextMenu.Items.Add(deleteMenuItem)
+            contextMenu.Items.Add(renameMenuItem)
+            contextMenu.Show(Cursor.Position)
+        End If
+    End Sub
 End Class
