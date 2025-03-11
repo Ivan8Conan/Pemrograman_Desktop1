@@ -28,8 +28,8 @@ Partial Class Form2
         TextBox1 = New TextBox()
         TextBox2 = New TextBox()
         TextBox3 = New TextBox()
-        Button1 = New Button()
-        Button2 = New Button()
+        btnSimpan = New Button()
+        btnClose = New Button()
         SuspendLayout()
         ' 
         ' Label1
@@ -81,33 +81,33 @@ Partial Class Form2
         TextBox3.Size = New Size(194, 27)
         TextBox3.TabIndex = 5
         ' 
-        ' Button1
+        ' btnSimpan
         ' 
-        Button1.Font = New Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Button1.Location = New Point(172, 193)
-        Button1.Name = "Button1"
-        Button1.Size = New Size(84, 39)
-        Button1.TabIndex = 6
-        Button1.Text = "Simpan"
-        Button1.UseVisualStyleBackColor = True
+        btnSimpan.Font = New Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        btnSimpan.Location = New Point(172, 193)
+        btnSimpan.Name = "btnSimpan"
+        btnSimpan.Size = New Size(84, 39)
+        btnSimpan.TabIndex = 6
+        btnSimpan.Text = "Simpan"
+        btnSimpan.UseVisualStyleBackColor = True
         ' 
-        ' Button2
+        ' btnClose
         ' 
-        Button2.Font = New Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Button2.Location = New Point(279, 193)
-        Button2.Name = "Button2"
-        Button2.Size = New Size(87, 39)
-        Button2.TabIndex = 7
-        Button2.Text = "Tutup"
-        Button2.UseVisualStyleBackColor = True
+        btnClose.Font = New Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        btnClose.Location = New Point(279, 193)
+        btnClose.Name = "btnClose"
+        btnClose.Size = New Size(87, 39)
+        btnClose.TabIndex = 7
+        btnClose.Text = "Tutup"
+        btnClose.UseVisualStyleBackColor = True
         ' 
         ' Form2
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(439, 281)
-        Controls.Add(Button2)
-        Controls.Add(Button1)
+        Controls.Add(btnClose)
+        Controls.Add(btnSimpan)
         Controls.Add(TextBox3)
         Controls.Add(TextBox2)
         Controls.Add(TextBox1)
@@ -126,6 +126,6 @@ Partial Class Form2
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents TextBox2 As TextBox
     Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Button2 As Button
+    Friend WithEvents btnSimpan As Button
+    Friend WithEvents btnClose As Button
 End Class

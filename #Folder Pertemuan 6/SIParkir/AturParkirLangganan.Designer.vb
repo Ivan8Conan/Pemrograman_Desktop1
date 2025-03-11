@@ -38,7 +38,7 @@ Partial Class AturParkirLangganan
         Button3 = New Button()
         Label7 = New Label()
         DataGridView1 = New DataGridView()
-        Button4 = New Button()
+        btnClose = New Button()
         CType(DataGridView1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
@@ -180,22 +180,22 @@ Partial Class AturParkirLangganan
         DataGridView1.Size = New Size(725, 158)
         DataGridView1.TabIndex = 16
         ' 
-        ' Button4
+        ' btnClose
         ' 
-        Button4.Font = New Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Button4.Location = New Point(661, 389)
-        Button4.Name = "Button4"
-        Button4.Size = New Size(94, 29)
-        Button4.TabIndex = 17
-        Button4.Text = "Tutup"
-        Button4.UseVisualStyleBackColor = True
+        btnClose.Font = New Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        btnClose.Location = New Point(661, 389)
+        btnClose.Name = "btnClose"
+        btnClose.Size = New Size(94, 33)
+        btnClose.TabIndex = 17
+        btnClose.Text = "Tutup"
+        btnClose.UseVisualStyleBackColor = True
         ' 
         ' AturParkirLangganan
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(800, 450)
-        Controls.Add(Button4)
+        Controls.Add(btnClose)
         Controls.Add(DataGridView1)
         Controls.Add(Label7)
         Controls.Add(Button3)
@@ -235,5 +235,5 @@ Partial Class AturParkirLangganan
     Friend WithEvents Button3 As Button
     Friend WithEvents Label7 As Label
     Friend WithEvents DataGridView1 As DataGridView
-    Friend WithEvents Button4 As Button
+    Friend WithEvents btnClose As Button
 End Class

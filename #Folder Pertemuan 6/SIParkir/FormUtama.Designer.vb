@@ -74,13 +74,13 @@ Partial Class FormUtama
         ' AturProfilToolStripMenuItem
         ' 
         AturProfilToolStripMenuItem.Name = "AturProfilToolStripMenuItem"
-        AturProfilToolStripMenuItem.Size = New Size(224, 26)
+        AturProfilToolStripMenuItem.Size = New Size(159, 26)
         AturProfilToolStripMenuItem.Text = "Atur Profil"
         ' 
         ' LogoutToolStripMenuItem
         ' 
         LogoutToolStripMenuItem.Name = "LogoutToolStripMenuItem"
-        LogoutToolStripMenuItem.Size = New Size(224, 26)
+        LogoutToolStripMenuItem.Size = New Size(159, 26)
         LogoutToolStripMenuItem.Text = "Logout"
         ' 
         ' AdminToolStripMenuItem
@@ -112,13 +112,13 @@ Partial Class FormUtama
         ' BantuanToolStripMenuItem1
         ' 
         BantuanToolStripMenuItem1.Name = "BantuanToolStripMenuItem1"
-        BantuanToolStripMenuItem1.Size = New Size(224, 26)
+        BantuanToolStripMenuItem1.Size = New Size(146, 26)
         BantuanToolStripMenuItem1.Text = "Bantuan"
         ' 
         ' TentangToolStripMenuItem
         ' 
         TentangToolStripMenuItem.Name = "TentangToolStripMenuItem"
-        TentangToolStripMenuItem.Size = New Size(224, 26)
+        TentangToolStripMenuItem.Size = New Size(146, 26)
         TentangToolStripMenuItem.Text = "Tentang"
         ' 
         ' DataGridView1

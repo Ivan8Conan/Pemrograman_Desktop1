@@ -26,8 +26,8 @@ Partial Class Form1
         Label2 = New Label()
         TextBox1 = New TextBox()
         TextBox2 = New TextBox()
-        Button1 = New Button()
-        Button2 = New Button()
+        btnLogin = New Button()
+        btnClose = New Button()
         SuspendLayout()
         ' 
         ' Label1
@@ -66,35 +66,35 @@ Partial Class Form1
         TextBox2.Size = New Size(194, 27)
         TextBox2.TabIndex = 3
         ' 
-        ' Button1
+        ' btnLogin
         ' 
-        Button1.Font = New Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Button1.Location = New Point(173, 176)
-        Button1.Margin = New Padding(2, 3, 2, 3)
-        Button1.Name = "Button1"
-        Button1.Size = New Size(87, 37)
-        Button1.TabIndex = 4
-        Button1.Text = "Login"
-        Button1.UseVisualStyleBackColor = True
+        btnLogin.Font = New Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        btnLogin.Location = New Point(173, 176)
+        btnLogin.Margin = New Padding(2, 3, 2, 3)
+        btnLogin.Name = "btnLogin"
+        btnLogin.Size = New Size(87, 37)
+        btnLogin.TabIndex = 4
+        btnLogin.Text = "Login"
+        btnLogin.UseVisualStyleBackColor = True
         ' 
-        ' Button2
+        ' btnClose
         ' 
-        Button2.Font = New Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Button2.Location = New Point(279, 176)
-        Button2.Margin = New Padding(2, 3, 2, 3)
-        Button2.Name = "Button2"
-        Button2.Size = New Size(87, 37)
-        Button2.TabIndex = 5
-        Button2.Text = "Keluar"
-        Button2.UseVisualStyleBackColor = True
+        btnClose.Font = New Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        btnClose.Location = New Point(279, 176)
+        btnClose.Margin = New Padding(2, 3, 2, 3)
+        btnClose.Name = "btnClose"
+        btnClose.Size = New Size(87, 37)
+        btnClose.TabIndex = 5
+        btnClose.Text = "Keluar"
+        btnClose.UseVisualStyleBackColor = True
         ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(438, 278)
-        Controls.Add(Button2)
-        Controls.Add(Button1)
+        Controls.Add(btnClose)
+        Controls.Add(btnLogin)
         Controls.Add(TextBox2)
         Controls.Add(TextBox1)
         Controls.Add(Label2)
@@ -111,7 +111,7 @@ Partial Class Form1
     Friend WithEvents Label2 As Label
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Button2 As Button
+    Friend WithEvents btnLogin As Button
+    Friend WithEvents btnClose As Button
 
 End Class
