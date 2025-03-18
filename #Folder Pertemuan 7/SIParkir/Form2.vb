@@ -42,6 +42,7 @@ Public Class frmProfil
                 FormUtama.Close()
                 frmLogin.txtUsername.Focus()
                 frmLogin.ShowDialog()
+                Me.Hide()
             End If
         ElseIf txtRetype.Text <> "" Then
             MsgBox("Password tidak sama!")

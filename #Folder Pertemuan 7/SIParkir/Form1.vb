@@ -22,7 +22,7 @@ Public Class frmLogin
             FormUtama.lblInfoUser.Text = "Informasi - (User: " & pengguna & ")"
             FormUtama.lblTgl.Text = "Tangggal : " & Now.Day & " - " & Now.Month & " - " & Now.Year
             FormUtama.RefreshGrid()
-            FormUtama.lblJmlKendaraan()
+            FormUtama.HitungJumlah()
             FormUtama.Show()
             Me.Hide()
         Else

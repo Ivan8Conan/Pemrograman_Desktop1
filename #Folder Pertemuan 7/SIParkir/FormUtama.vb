@@ -1,14 +1,10 @@
 ﻿Imports Microsoft.VisualBasic.ApplicationServices
 Imports MySql.Data.MySqlClient
 Public Class FormUtama
-    Private Sub AturProfilToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AturProfilToolStripMenuItem.Click
+    Private Sub AturProfilToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ProfilToolStripMenuItem1.Click
         Dim FormAturProfil As New frmProfil()
         FormAturProfil.Show()
         Me.Hide()
-    End Sub
-
-    Private Sub TentangToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles TentangToolStripMenuItem.Click
-
     End Sub
 
     Private Sub LanggananToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles LanggananToolStripMenuItem.Click
@@ -17,7 +13,7 @@ Public Class FormUtama
         Me.Hide()
     End Sub
 
-    Private Sub LaporanToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles LaporanToolStripMenuItem.Click
+    Private Sub LaporanToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles LaporanPendapatanToolStripMenuItem.Click
         Dim FormLaporan As New LaporanPendapatanParkir()
         FormLaporan.Show()
         Me.Hide()
@@ -43,13 +39,13 @@ Public Class FormUtama
         myDataReader = myCommand.ExecuteReader
         If myDataReader.HasRows Then
             While myDataReader.Read()
-                DataGridView1.Rows.Add()
-                DataGridView1.Item(0, i).Value = myDataReader("no_plat")
-                DataGridView1.Item(1, i).Value = myDataReader("waktu_masuk")
-                DataGridView1.Item(2, i).Value = myDataReader("waktu_keluar")
-                DataGridView1.Item(3, i).Value = myDataReader("harga")
-                DataGridView1.Item(4, i).Value = myDataReader("jenis")
-                DataGridView1.Item(5, i).Value = myDataReader("id")
+                DataGridView2.Rows.Add()
+                DataGridView2.Item(0, i).Value = myDataReader("no_plat")
+                DataGridView2.Item(1, i).Value = myDataReader("waktu_masuk")
+                DataGridView2.Item(2, i).Value = myDataReader("waktu_keluar")
+                DataGridView2.Item(3, i).Value = myDataReader("harga")
+                DataGridView2.Item(4, i).Value = myDataReader("jenis")
+                DataGridView2.Item(5, i).Value = myDataReader("id")
                 i = i + 1
             End While
         End If
@@ -188,10 +184,6 @@ Public Class FormUtama
         MsgBox("Total Pendapatan hari ini: Rp. " & total)
     End Sub
 
-    Private Sub BantuanToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles BantuanToolStripMenuItem.Click
-
-    End Sub
-
     Private Sub LogoutToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles LogoutToolStripMenuItem.Click
         Me.Close()
         frmLogin.txtUsername.Clear()
@@ -245,5 +237,37 @@ Public Class FormUtama
 
     Private Sub pnlGrid_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles pnlGrid.CellContentClick
 
+    End Sub
+
+    Private Sub BantuanToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles BantuanToolStripMenuItem1.Click
+        Dim bantuanText As String = "Panduan Penggunaan Sistem Informasi Parkir:" & vbCrLf & vbCrLf &
+                                "1. **Masuk & Keluar Kendaraan**" & vbCrLf &
+                                "   - Klik 'Daftar Kendaraan' untuk melihat kendaraan terdaftar." & vbCrLf &
+                                "   - Tambahkan kendaraan baru dengan tombol 'Tambah'." & vbCrLf &
+                                "   - Klik 'Hapus' untuk menghapus kendaraan dari daftar." & vbCrLf & vbCrLf &
+                                "2. **Laporan Pendapatan**" & vbCrLf &
+                                "   - Klik 'Laporan Pendapatan' untuk melihat total pendapatan harian." & vbCrLf & vbCrLf &
+                                "3. **Manajemen Pengguna**" & vbCrLf &
+                                "   - Klik 'Profil' untuk melihat dan mengedit informasi akun Anda." & vbCrLf & vbCrLf &
+                                "4. **Keluar dari Aplikasi**" & vbCrLf &
+                                "   - Gunakan tombol 'Exit' untuk keluar dari aplikasi dengan aman." & vbCrLf & vbCrLf &
+                                "Untuk informasi lebih lanjut, hubungi administrator."
+
+        MessageBox.Show(bantuanText, "Bantuan - Sistem Informasi Parkir", MessageBoxButtons.OK, MessageBoxIcon.Information)
+    End Sub
+
+    Private Sub TentangToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles TentangToolStripMenuItem.Click
+        Dim tentangText As String = "Sistem Informasi Parkir" & vbCrLf & vbCrLf &
+                                "Versi: 1.0.0" & vbCrLf &
+                                "Dibuat oleh: Ivan Conanta" & vbCrLf &
+                                "Tahun: 2025" & vbCrLf & vbCrLf &
+                                "Aplikasi ini dirancang untuk mengelola parkir kendaraan dengan fitur-fitur seperti:" & vbCrLf &
+                                "- Pendaftaran kendaraan" & vbCrLf &
+                                "- Pencatatan masuk & keluar kendaraan" & vbCrLf &
+                                "- Laporan pendapatan harian" & vbCrLf &
+                                "- Manajemen pengguna" & vbCrLf & vbCrLf &
+                                "Hak cipta © 2025. Semua hak dilindungi."
+
+        MessageBox.Show(tentangText, "Tentang Aplikasi", MessageBoxButtons.OK, MessageBoxIcon.Information)
     End Sub
 End Class

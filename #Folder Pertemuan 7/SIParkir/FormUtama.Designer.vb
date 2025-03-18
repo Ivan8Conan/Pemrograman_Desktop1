@@ -25,11 +25,12 @@ Partial Class FormUtama
         components = New ComponentModel.Container()
         MenuStrip1 = New MenuStrip()
         ToolStripMenuItem1 = New ToolStripMenuItem()
-        AturProfilToolStripMenuItem = New ToolStripMenuItem()
+        ProfilToolStripMenuItem1 = New ToolStripMenuItem()
         LogoutToolStripMenuItem = New ToolStripMenuItem()
         AdminToolStripMenuItem = New ToolStripMenuItem()
         LanggananToolStripMenuItem = New ToolStripMenuItem()
-        LaporanToolStripMenuItem = New ToolStripMenuItem()
+        LaporanPendapatanToolStripMenuItem = New ToolStripMenuItem()
+        DaftarKendaraanToolStripMenuItem = New ToolStripMenuItem()
         BantuanToolStripMenuItem = New ToolStripMenuItem()
         BantuanToolStripMenuItem1 = New ToolStripMenuItem()
         TentangToolStripMenuItem = New ToolStripMenuItem()
@@ -39,7 +40,7 @@ Partial Class FormUtama
         lblInfoUser = New Label()
         lblTgl = New Label()
         lblJmlKendaraan = New Label()
-        ContextMenuStrip1 = New ContextMenuStrip(components)
+        DeleteToolStripMenuItem = New ContextMenuStrip(components)
         lblPlat = New Label()
         lblHarga = New Label()
         DataGridView1 = New DataGridView()
@@ -75,16 +76,16 @@ Partial Class FormUtama
         ' 
         ' ToolStripMenuItem1
         ' 
-        ToolStripMenuItem1.DropDownItems.AddRange(New ToolStripItem() {AturProfilToolStripMenuItem, LogoutToolStripMenuItem})
+        ToolStripMenuItem1.DropDownItems.AddRange(New ToolStripItem() {ProfilToolStripMenuItem1, LogoutToolStripMenuItem})
         ToolStripMenuItem1.Name = "ToolStripMenuItem1"
         ToolStripMenuItem1.Size = New Size(67, 24)
         ToolStripMenuItem1.Text = "Sistem"
         ' 
-        ' AturProfilToolStripMenuItem
+        ' ProfilToolStripMenuItem1
         ' 
-        AturProfilToolStripMenuItem.Name = "AturProfilToolStripMenuItem"
-        AturProfilToolStripMenuItem.Size = New Size(139, 26)
-        AturProfilToolStripMenuItem.Text = "Profil"
+        ProfilToolStripMenuItem1.Name = "ProfilToolStripMenuItem1"
+        ProfilToolStripMenuItem1.Size = New Size(139, 26)
+        ProfilToolStripMenuItem1.Text = "Profil"
         ' 
         ' LogoutToolStripMenuItem
         ' 
@@ -94,7 +95,7 @@ Partial Class FormUtama
         ' 
         ' AdminToolStripMenuItem
         ' 
-        AdminToolStripMenuItem.DropDownItems.AddRange(New ToolStripItem() {LanggananToolStripMenuItem, LaporanToolStripMenuItem})
+        AdminToolStripMenuItem.DropDownItems.AddRange(New ToolStripItem() {LanggananToolStripMenuItem, LaporanPendapatanToolStripMenuItem, DaftarKendaraanToolStripMenuItem})
         AdminToolStripMenuItem.Name = "AdminToolStripMenuItem"
         AdminToolStripMenuItem.Size = New Size(67, 24)
         AdminToolStripMenuItem.Text = "Admin"
@@ -105,11 +106,17 @@ Partial Class FormUtama
         LanggananToolStripMenuItem.Size = New Size(240, 26)
         LanggananToolStripMenuItem.Text = "Kendaraan Langganan"
         ' 
-        ' LaporanToolStripMenuItem
+        ' LaporanPendapatanToolStripMenuItem
         ' 
-        LaporanToolStripMenuItem.Name = "LaporanToolStripMenuItem"
-        LaporanToolStripMenuItem.Size = New Size(240, 26)
-        LaporanToolStripMenuItem.Text = "Laporan Pendapatan"
+        LaporanPendapatanToolStripMenuItem.Name = "LaporanPendapatanToolStripMenuItem"
+        LaporanPendapatanToolStripMenuItem.Size = New Size(240, 26)
+        LaporanPendapatanToolStripMenuItem.Text = "Laporan Pendapatan"
+        ' 
+        ' DaftarKendaraanToolStripMenuItem
+        ' 
+        DaftarKendaraanToolStripMenuItem.Name = "DaftarKendaraanToolStripMenuItem"
+        DaftarKendaraanToolStripMenuItem.Size = New Size(240, 26)
+        DaftarKendaraanToolStripMenuItem.Text = "Daftar Kendaraan"
         ' 
         ' BantuanToolStripMenuItem
         ' 
@@ -121,13 +128,13 @@ Partial Class FormUtama
         ' BantuanToolStripMenuItem1
         ' 
         BantuanToolStripMenuItem1.Name = "BantuanToolStripMenuItem1"
-        BantuanToolStripMenuItem1.Size = New Size(146, 26)
+        BantuanToolStripMenuItem1.Size = New Size(224, 26)
         BantuanToolStripMenuItem1.Text = "Bantuan"
         ' 
         ' TentangToolStripMenuItem
         ' 
         TentangToolStripMenuItem.Name = "TentangToolStripMenuItem"
-        TentangToolStripMenuItem.Size = New Size(146, 26)
+        TentangToolStripMenuItem.Size = New Size(224, 26)
         TentangToolStripMenuItem.Text = "Tentang"
         ' 
         ' pnlPlat
@@ -192,11 +199,11 @@ Partial Class FormUtama
         lblJmlKendaraan.TabIndex = 14
         lblJmlKendaraan.Text = "0 Motor, 0 Mobil, 0 Tasksi," & vbCrLf & "0 Sepeda, 0 Bis/Truk"
         ' 
-        ' ContextMenuStrip1
+        ' DeleteToolStripMenuItem
         ' 
-        ContextMenuStrip1.ImageScalingSize = New Size(20, 20)
-        ContextMenuStrip1.Name = "Delete"
-        ContextMenuStrip1.Size = New Size(61, 4)
+        DeleteToolStripMenuItem.ImageScalingSize = New Size(20, 20)
+        DeleteToolStripMenuItem.Name = "Delete"
+        DeleteToolStripMenuItem.Size = New Size(61, 4)
         ' 
         ' lblPlat
         ' 
@@ -204,7 +211,7 @@ Partial Class FormUtama
         lblPlat.BackColor = Color.FromArgb(CByte(224), CByte(224), CByte(224))
         lblPlat.FlatStyle = FlatStyle.Flat
         lblPlat.Font = New Font("Segoe UI", 36F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        lblPlat.Location = New Point(240, 35)
+        lblPlat.Location = New Point(184, 32)
         lblPlat.Name = "lblPlat"
         lblPlat.Size = New Size(330, 81)
         lblPlat.TabIndex = 17
@@ -215,7 +222,7 @@ Partial Class FormUtama
         lblHarga.AutoSize = True
         lblHarga.BackColor = Color.FromArgb(CByte(224), CByte(224), CByte(224))
         lblHarga.Font = New Font("Segoe UI", 22.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        lblHarga.Location = New Point(12, 143)
+        lblHarga.Location = New Point(14, 141)
         lblHarga.Name = "lblHarga"
         lblHarga.Size = New Size(89, 50)
         lblHarga.TabIndex = 18
@@ -226,7 +233,7 @@ Partial Class FormUtama
         DataGridView1.BackgroundColor = Color.FromArgb(CByte(224), CByte(224), CByte(224))
         DataGridView1.BorderStyle = BorderStyle.Fixed3D
         DataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DataGridView1.Location = New Point(0, 214)
+        DataGridView1.Location = New Point(0, 212)
         DataGridView1.Name = "DataGridView1"
         DataGridView1.RowHeadersWidth = 51
         DataGridView1.Size = New Size(236, 117)
@@ -279,7 +286,7 @@ Partial Class FormUtama
         ' 
         DataGridView2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
         DataGridView2.Columns.AddRange(New DataGridViewColumn() {ColNoPlat, ColMasuk, ColKeluar, ColHarga, ColJenis, Column1})
-        DataGridView2.ContextMenuStrip = ContextMenuStrip1
+        DataGridView2.ContextMenuStrip = DeleteToolStripMenuItem
         DataGridView2.Location = New Point(242, 129)
         DataGridView2.Name = "DataGridView2"
         DataGridView2.RowHeadersWidth = 51
@@ -370,11 +377,11 @@ Partial Class FormUtama
 
     Friend WithEvents MenuStrip1 As MenuStrip
     Friend WithEvents ToolStripMenuItem1 As ToolStripMenuItem
-    Friend WithEvents AturProfilToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ProfilToolStripMenuItem1 As ToolStripMenuItem
     Friend WithEvents LogoutToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents AdminToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents LanggananToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents LaporanToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents LaporanPendapatanToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents BantuanToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents BantuanToolStripMenuItem1 As ToolStripMenuItem
     Friend WithEvents TentangToolStripMenuItem As ToolStripMenuItem
@@ -384,7 +391,7 @@ Partial Class FormUtama
     Friend WithEvents lblInfoUser As Label
     Friend WithEvents lblTgl As Label
     Friend WithEvents lblJmlKendaraan As Label
-    Friend WithEvents ContextMenuStrip1 As ContextMenuStrip
+    Friend WithEvents DeleteToolStripMenuItem As ContextMenuStrip
     Friend WithEvents lblPlat As Label
     Friend WithEvents lblHarga As Label
     Friend WithEvents DataGridView1 As DataGridView
@@ -400,4 +407,5 @@ Partial Class FormUtama
     Friend WithEvents ColHarga As DataGridViewTextBoxColumn
     Friend WithEvents ColJenis As DataGridViewTextBoxColumn
     Friend WithEvents Column1 As DataGridViewTextBoxColumn
+    Friend WithEvents DaftarKendaraanToolStripMenuItem As ToolStripMenuItem
 End Class
