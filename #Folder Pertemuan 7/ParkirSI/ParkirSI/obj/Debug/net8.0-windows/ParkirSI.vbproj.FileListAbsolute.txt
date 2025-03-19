@@ -1,0 +1,62 @@
+C:\kuliah kuliah\SEMESTER 6\Prog. Desktop\#Folder Pertemuan 7\ParkirSI\ParkirSI\obj\Debug\net8.0-windows\ParkirSI.frmLogin.resources
+C:\kuliah kuliah\SEMESTER 6\Prog. Desktop\#Folder Pertemuan 7\ParkirSI\ParkirSI\obj\Debug\net8.0-windows\ParkirSI.frmUtama.resources
+C:\kuliah kuliah\SEMESTER 6\Prog. Desktop\#Folder Pertemuan 7\ParkirSI\ParkirSI\obj\Debug\net8.0-windows\ParkirSI.frmProfil.resources
+C:\kuliah kuliah\SEMESTER 6\Prog. Desktop\#Folder Pertemuan 7\ParkirSI\ParkirSI\obj\Debug\net8.0-windows\ParkirSI.frmLangganan.resources
+C:\kuliah kuliah\SEMESTER 6\Prog. Desktop\#Folder Pertemuan 7\ParkirSI\ParkirSI\obj\Debug\net8.0-windows\ParkirSI.vbproj.GenerateResource.cache
+C:\kuliah kuliah\SEMESTER 6\Prog. Desktop\#Folder Pertemuan 7\ParkirSI\ParkirSI\obj\Debug\net8.0-windows\ParkirSI.GeneratedMSBuildEditorConfig.editorconfig
+C:\kuliah kuliah\SEMESTER 6\Prog. Desktop\#Folder Pertemuan 7\ParkirSI\ParkirSI\obj\Debug\net8.0-windows\ParkirSI.AssemblyInfoInputs.cache
+C:\kuliah kuliah\SEMESTER 6\Prog. Desktop\#Folder Pertemuan 7\ParkirSI\ParkirSI\obj\Debug\net8.0-windows\ParkirSI.AssemblyInfo.vb
+C:\kuliah kuliah\SEMESTER 6\Prog. Desktop\#Folder Pertemuan 7\ParkirSI\ParkirSI\obj\Debug\net8.0-windows\ParkirSI.vbproj.CoreCompileInputs.cache
+C:\kuliah kuliah\SEMESTER 6\Prog. Desktop\#Folder Pertemuan 7\ParkirSI\ParkirSI\obj\Debug\net8.0-windows\ParkirSI.sourcelink.json
+C:\kuliah kuliah\SEMESTER 6\Prog. Desktop\#Folder Pertemuan 7\ParkirSI\ParkirSI\bin\Debug\net8.0-windows\ParkirSI.exe
+C:\kuliah kuliah\SEMESTER 6\Prog. Desktop\#Folder Pertemuan 7\ParkirSI\ParkirSI\bin\Debug\net8.0-windows\ParkirSI.deps.json
+C:\kuliah kuliah\SEMESTER 6\Prog. Desktop\#Folder Pertemuan 7\ParkirSI\ParkirSI\bin\Debug\net8.0-windows\ParkirSI.runtimeconfig.json
+C:\kuliah kuliah\SEMESTER 6\Prog. Desktop\#Folder Pertemuan 7\ParkirSI\ParkirSI\bin\Debug\net8.0-windows\ParkirSI.dll
+C:\kuliah kuliah\SEMESTER 6\Prog. Desktop\#Folder Pertemuan 7\ParkirSI\ParkirSI\bin\Debug\net8.0-windows\ParkirSI.pdb
+C:\kuliah kuliah\SEMESTER 6\Prog. Desktop\#Folder Pertemuan 7\ParkirSI\ParkirSI\obj\Debug\net8.0-windows\ParkirSI.dll
+C:\kuliah kuliah\SEMESTER 6\Prog. Desktop\#Folder Pertemuan 7\ParkirSI\ParkirSI\obj\Debug\net8.0-windows\refint\ParkirSI.dll
+C:\kuliah kuliah\SEMESTER 6\Prog. Desktop\#Folder Pertemuan 7\ParkirSI\ParkirSI\obj\Debug\net8.0-windows\ParkirSI.pdb
+C:\kuliah kuliah\SEMESTER 6\Prog. Desktop\#Folder Pertemuan 7\ParkirSI\ParkirSI\obj\Debug\net8.0-windows\ParkirSI.genruntimeconfig.cache
+C:\kuliah kuliah\SEMESTER 6\Prog. Desktop\#Folder Pertemuan 7\ParkirSI\ParkirSI\obj\Debug\net8.0-windows\ref\ParkirSI.dll
+C:\kuliah kuliah\SEMESTER 6\Prog. Desktop\#Folder Pertemuan 7\ParkirSI\ParkirSI\obj\Debug\net8.0-windows\ParkirSI.vbproj.AssemblyReference.cache
+C:\kuliah kuliah\SEMESTER 6\Prog. Desktop\#Folder Pertemuan 7\ParkirSI\ParkirSI\bin\Debug\net8.0-windows\MySql.Data.dll
+C:\kuliah kuliah\SEMESTER 6\Prog. Desktop\#Folder Pertemuan 7\ParkirSI\ParkirSI\bin\Debug\net8.0-windows\MySql.Data.xml
+C:\kuliah kuliah\SEMESTER 6\Prog. Desktop\#Folder Pertemuan 7\ParkirSI\ParkirSI\obj\Debug\net8.0-windows\ParkirSI.vbproj.Up2Date
+C:\Users\Ivan\OneDrive - Duta Wacana Christian University\SEMESTER 2\Semester 6\Pemrograman Desktop\Tugas\Pemrograman_Desktop1\#Folder Pertemuan 7\ParkirSI\ParkirSI\obj\Debug\net8.0-windows\ParkirSI.frmLogin.resources
+C:\Users\Ivan\OneDrive - Duta Wacana Christian University\SEMESTER 2\Semester 6\Pemrograman Desktop\Tugas\Pemrograman_Desktop1\#Folder Pertemuan 7\ParkirSI\ParkirSI\obj\Debug\net8.0-windows\ParkirSI.frmUtama.resources
+C:\Users\Ivan\OneDrive - Duta Wacana Christian University\SEMESTER 2\Semester 6\Pemrograman Desktop\Tugas\Pemrograman_Desktop1\#Folder Pertemuan 7\ParkirSI\ParkirSI\obj\Debug\net8.0-windows\ParkirSI.frmProfil.resources
+C:\Users\Ivan\OneDrive - Duta Wacana Christian University\SEMESTER 2\Semester 6\Pemrograman Desktop\Tugas\Pemrograman_Desktop1\#Folder Pertemuan 7\ParkirSI\ParkirSI\obj\Debug\net8.0-windows\ParkirSI.frmLangganan.resources
+C:\Users\Ivan\OneDrive - Duta Wacana Christian University\SEMESTER 2\Semester 6\Pemrograman Desktop\Tugas\Pemrograman_Desktop1\#Folder Pertemuan 7\ParkirSI\ParkirSI\obj\Debug\net8.0-windows\ParkirSI.vbproj.GenerateResource.cache
+C:\Users\Ivan\OneDrive - Duta Wacana Christian University\SEMESTER 2\Semester 6\Pemrograman Desktop\Tugas\Pemrograman_Desktop1\#Folder Pertemuan 7\ParkirSI\ParkirSI\obj\Debug\net8.0-windows\ParkirSI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ivan\OneDrive - Duta Wacana Christian University\SEMESTER 2\Semester 6\Pemrograman Desktop\Tugas\Pemrograman_Desktop1\#Folder Pertemuan 7\ParkirSI\ParkirSI\obj\Debug\net8.0-windows\ParkirSI.AssemblyInfoInputs.cache
+C:\Users\Ivan\OneDrive - Duta Wacana Christian University\SEMESTER 2\Semester 6\Pemrograman Desktop\Tugas\Pemrograman_Desktop1\#Folder Pertemuan 7\ParkirSI\ParkirSI\obj\Debug\net8.0-windows\ParkirSI.AssemblyInfo.vb
+C:\Users\Ivan\OneDrive - Duta Wacana Christian University\SEMESTER 2\Semester 6\Pemrograman Desktop\Tugas\Pemrograman_Desktop1\#Folder Pertemuan 7\ParkirSI\ParkirSI\obj\Debug\net8.0-windows\ParkirSI.vbproj.CoreCompileInputs.cache
+C:\Users\Ivan\OneDrive - Duta Wacana Christian University\SEMESTER 2\Semester 6\Pemrograman Desktop\Tugas\Pemrograman_Desktop1\#Folder Pertemuan 7\ParkirSI\ParkirSI\obj\Debug\net8.0-windows\ParkirSI.sourcelink.json
+C:\Users\Ivan\OneDrive - Duta Wacana Christian University\SEMESTER 2\Semester 6\Pemrograman Desktop\Tugas\Pemrograman_Desktop1\#Folder Pertemuan 7\ParkirSI\ParkirSI\obj\Debug\net8.0-windows\ParkirSI.dll
+C:\Users\Ivan\OneDrive - Duta Wacana Christian University\SEMESTER 2\Semester 6\Pemrograman Desktop\Tugas\Pemrograman_Desktop1\#Folder Pertemuan 7\ParkirSI\ParkirSI\obj\Debug\net8.0-windows\refint\ParkirSI.dll
+C:\Users\Ivan\OneDrive - Duta Wacana Christian University\SEMESTER 2\Semester 6\Pemrograman Desktop\Tugas\Pemrograman_Desktop1\#Folder Pertemuan 7\ParkirSI\ParkirSI\obj\Debug\net8.0-windows\ParkirSI.pdb
+C:\Users\Ivan\OneDrive - Duta Wacana Christian University\SEMESTER 2\Semester 6\Pemrograman Desktop\Tugas\Pemrograman_Desktop1\#Folder Pertemuan 7\ParkirSI\ParkirSI\bin\Debug\net8.0-windows\ParkirSI.exe
+C:\Users\Ivan\OneDrive - Duta Wacana Christian University\SEMESTER 2\Semester 6\Pemrograman Desktop\Tugas\Pemrograman_Desktop1\#Folder Pertemuan 7\ParkirSI\ParkirSI\bin\Debug\net8.0-windows\ParkirSI.deps.json
+C:\Users\Ivan\OneDrive - Duta Wacana Christian University\SEMESTER 2\Semester 6\Pemrograman Desktop\Tugas\Pemrograman_Desktop1\#Folder Pertemuan 7\ParkirSI\ParkirSI\bin\Debug\net8.0-windows\ParkirSI.runtimeconfig.json
+C:\Users\Ivan\OneDrive - Duta Wacana Christian University\SEMESTER 2\Semester 6\Pemrograman Desktop\Tugas\Pemrograman_Desktop1\#Folder Pertemuan 7\ParkirSI\ParkirSI\bin\Debug\net8.0-windows\ParkirSI.dll
+C:\Users\Ivan\OneDrive - Duta Wacana Christian University\SEMESTER 2\Semester 6\Pemrograman Desktop\Tugas\Pemrograman_Desktop1\#Folder Pertemuan 7\ParkirSI\ParkirSI\bin\Debug\net8.0-windows\ParkirSI.pdb
+C:\Users\Ivan\OneDrive - Duta Wacana Christian University\SEMESTER 2\Semester 6\Pemrograman Desktop\Tugas\Pemrograman_Desktop1\#Folder Pertemuan 7\ParkirSI\ParkirSI\bin\Debug\net8.0-windows\BouncyCastle.Cryptography.dll
+C:\Users\Ivan\OneDrive - Duta Wacana Christian University\SEMESTER 2\Semester 6\Pemrograman Desktop\Tugas\Pemrograman_Desktop1\#Folder Pertemuan 7\ParkirSI\ParkirSI\bin\Debug\net8.0-windows\Google.Protobuf.dll
+C:\Users\Ivan\OneDrive - Duta Wacana Christian University\SEMESTER 2\Semester 6\Pemrograman Desktop\Tugas\Pemrograman_Desktop1\#Folder Pertemuan 7\ParkirSI\ParkirSI\bin\Debug\net8.0-windows\K4os.Compression.LZ4.dll
+C:\Users\Ivan\OneDrive - Duta Wacana Christian University\SEMESTER 2\Semester 6\Pemrograman Desktop\Tugas\Pemrograman_Desktop1\#Folder Pertemuan 7\ParkirSI\ParkirSI\bin\Debug\net8.0-windows\K4os.Compression.LZ4.Streams.dll
+C:\Users\Ivan\OneDrive - Duta Wacana Christian University\SEMESTER 2\Semester 6\Pemrograman Desktop\Tugas\Pemrograman_Desktop1\#Folder Pertemuan 7\ParkirSI\ParkirSI\bin\Debug\net8.0-windows\K4os.Hash.xxHash.dll
+C:\Users\Ivan\OneDrive - Duta Wacana Christian University\SEMESTER 2\Semester 6\Pemrograman Desktop\Tugas\Pemrograman_Desktop1\#Folder Pertemuan 7\ParkirSI\ParkirSI\bin\Debug\net8.0-windows\MySql.Data.dll
+C:\Users\Ivan\OneDrive - Duta Wacana Christian University\SEMESTER 2\Semester 6\Pemrograman Desktop\Tugas\Pemrograman_Desktop1\#Folder Pertemuan 7\ParkirSI\ParkirSI\bin\Debug\net8.0-windows\System.IO.Pipelines.dll
+C:\Users\Ivan\OneDrive - Duta Wacana Christian University\SEMESTER 2\Semester 6\Pemrograman Desktop\Tugas\Pemrograman_Desktop1\#Folder Pertemuan 7\ParkirSI\ParkirSI\bin\Debug\net8.0-windows\System.Text.Encodings.Web.dll
+C:\Users\Ivan\OneDrive - Duta Wacana Christian University\SEMESTER 2\Semester 6\Pemrograman Desktop\Tugas\Pemrograman_Desktop1\#Folder Pertemuan 7\ParkirSI\ParkirSI\bin\Debug\net8.0-windows\System.Text.Json.dll
+C:\Users\Ivan\OneDrive - Duta Wacana Christian University\SEMESTER 2\Semester 6\Pemrograman Desktop\Tugas\Pemrograman_Desktop1\#Folder Pertemuan 7\ParkirSI\ParkirSI\bin\Debug\net8.0-windows\ZstdSharp.dll
+C:\Users\Ivan\OneDrive - Duta Wacana Christian University\SEMESTER 2\Semester 6\Pemrograman Desktop\Tugas\Pemrograman_Desktop1\#Folder Pertemuan 7\ParkirSI\ParkirSI\bin\Debug\net8.0-windows\runtimes\win-x64\native\comerr64.dll
+C:\Users\Ivan\OneDrive - Duta Wacana Christian University\SEMESTER 2\Semester 6\Pemrograman Desktop\Tugas\Pemrograman_Desktop1\#Folder Pertemuan 7\ParkirSI\ParkirSI\bin\Debug\net8.0-windows\runtimes\win-x64\native\gssapi64.dll
+C:\Users\Ivan\OneDrive - Duta Wacana Christian University\SEMESTER 2\Semester 6\Pemrograman Desktop\Tugas\Pemrograman_Desktop1\#Folder Pertemuan 7\ParkirSI\ParkirSI\bin\Debug\net8.0-windows\runtimes\win-x64\native\k5sprt64.dll
+C:\Users\Ivan\OneDrive - Duta Wacana Christian University\SEMESTER 2\Semester 6\Pemrograman Desktop\Tugas\Pemrograman_Desktop1\#Folder Pertemuan 7\ParkirSI\ParkirSI\bin\Debug\net8.0-windows\runtimes\win-x64\native\krb5_64.dll
+C:\Users\Ivan\OneDrive - Duta Wacana Christian University\SEMESTER 2\Semester 6\Pemrograman Desktop\Tugas\Pemrograman_Desktop1\#Folder Pertemuan 7\ParkirSI\ParkirSI\bin\Debug\net8.0-windows\runtimes\win-x64\native\krbcc64.dll
+C:\Users\Ivan\OneDrive - Duta Wacana Christian University\SEMESTER 2\Semester 6\Pemrograman Desktop\Tugas\Pemrograman_Desktop1\#Folder Pertemuan 7\ParkirSI\ParkirSI\bin\Debug\net8.0-windows\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
+C:\Users\Ivan\OneDrive - Duta Wacana Christian University\SEMESTER 2\Semester 6\Pemrograman Desktop\Tugas\Pemrograman_Desktop1\#Folder Pertemuan 7\ParkirSI\ParkirSI\obj\Debug\net8.0-windows\ParkirSI.vbproj.AssemblyReference.cache
+C:\Users\Ivan\OneDrive - Duta Wacana Christian University\SEMESTER 2\Semester 6\Pemrograman Desktop\Tugas\Pemrograman_Desktop1\#Folder Pertemuan 7\ParkirSI\ParkirSI\obj\Debug\net8.0-windows\ParkirSI.vbproj.Up2Date
+C:\Users\Ivan\OneDrive - Duta Wacana Christian University\SEMESTER 2\Semester 6\Pemrograman Desktop\Tugas\Pemrograman_Desktop1\#Folder Pertemuan 7\ParkirSI\ParkirSI\obj\Debug\net8.0-windows\ParkirSI.genruntimeconfig.cache
+C:\Users\Ivan\OneDrive - Duta Wacana Christian University\SEMESTER 2\Semester 6\Pemrograman Desktop\Tugas\Pemrograman_Desktop1\#Folder Pertemuan 7\ParkirSI\ParkirSI\obj\Debug\net8.0-windows\ref\ParkirSI.dll
