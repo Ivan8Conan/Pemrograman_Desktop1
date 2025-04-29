@@ -158,6 +158,9 @@ Public Class frmUtama
             total = hasil.ToString
         End If
         MsgBox("Total Pendapatan hari ini: Rp. " & total)
+        Dim frmLap As New Form5()
+        frmLap.Show()
+        Me.Hide()
     End Sub
     Private Sub frmUtama_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         lblTgl.Text = "Tangggal : " & Now.Day & " - " & Now.Month & " - " & Now.Year

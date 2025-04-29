@@ -53,7 +53,7 @@ Partial Class frmLogin
         'txtUsername
         '
         Me.txtUsername.Location = New System.Drawing.Point(113, 35)
-        Me.txtUsername.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtUsername.Margin = New System.Windows.Forms.Padding(2)
         Me.txtUsername.Name = "txtUsername"
         Me.txtUsername.Size = New System.Drawing.Size(213, 22)
         Me.txtUsername.TabIndex = 2
@@ -62,7 +62,7 @@ Partial Class frmLogin
         'txtPassword
         '
         Me.txtPassword.Location = New System.Drawing.Point(113, 68)
-        Me.txtPassword.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtPassword.Margin = New System.Windows.Forms.Padding(2)
         Me.txtPassword.Name = "txtPassword"
         Me.txtPassword.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.txtPassword.Size = New System.Drawing.Size(213, 22)
@@ -72,9 +72,9 @@ Partial Class frmLogin
         'btnExit
         '
         Me.btnExit.Location = New System.Drawing.Point(233, 110)
-        Me.btnExit.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnExit.Margin = New System.Windows.Forms.Padding(2)
         Me.btnExit.Name = "btnExit"
-        Me.btnExit.Size = New System.Drawing.Size(92, 22)
+        Me.btnExit.Size = New System.Drawing.Size(92, 31)
         Me.btnExit.TabIndex = 6
         Me.btnExit.Text = "Exit"
         Me.btnExit.UseVisualStyleBackColor = True
@@ -82,9 +82,9 @@ Partial Class frmLogin
         'btnLogin
         '
         Me.btnLogin.Location = New System.Drawing.Point(113, 110)
-        Me.btnLogin.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnLogin.Margin = New System.Windows.Forms.Padding(2)
         Me.btnLogin.Name = "btnLogin"
-        Me.btnLogin.Size = New System.Drawing.Size(92, 22)
+        Me.btnLogin.Size = New System.Drawing.Size(92, 31)
         Me.btnLogin.TabIndex = 7
         Me.btnLogin.Text = "Login"
         Me.btnLogin.UseVisualStyleBackColor = True
@@ -93,7 +93,7 @@ Partial Class frmLogin
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(373, 152)
+        Me.ClientSize = New System.Drawing.Size(373, 166)
         Me.Controls.Add(Me.btnLogin)
         Me.Controls.Add(Me.btnExit)
         Me.Controls.Add(Me.txtPassword)
@@ -101,7 +101,7 @@ Partial Class frmLogin
         Me.Controls.Add(Me.lblPassword)
         Me.Controls.Add(Me.lblUsername)
         Me.KeyPreview = True
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "frmLogin"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Login"

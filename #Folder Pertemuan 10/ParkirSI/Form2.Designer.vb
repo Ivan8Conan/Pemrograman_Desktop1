@@ -22,369 +22,370 @@ Partial Class frmUtama
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        components = New ComponentModel.Container()
-        MenuStrip1 = New MenuStrip()
-        SToolStripMenuItem = New ToolStripMenuItem()
-        ProfileToolStripMenuItem = New ToolStripMenuItem()
-        LogoutToolStripMenuItem = New ToolStripMenuItem()
-        AdminToolStripMenuItem = New ToolStripMenuItem()
-        KendaraanLanggananToolStripMenuItem = New ToolStripMenuItem()
-        LaporanPendapatanToolStripMenuItem = New ToolStripMenuItem()
-        BToolStripMenuItem = New ToolStripMenuItem()
-        BantuanToolStripMenuItem = New ToolStripMenuItem()
-        TentangToolStripMenuItem = New ToolStripMenuItem()
-        ContextMenuStrip1 = New ContextMenuStrip(components)
-        DeleteToolStripMenuItem = New ToolStripMenuItem()
-        pnlPlat = New Panel()
-        lblPlat = New Label()
-        pnlHarga = New Panel()
-        lblHarga = New Label()
-        pnlInput = New Panel()
-        lblInfoJenis = New Label()
-        lblTekan = New Label()
-        lblInputPlat = New Label()
-        lblJenis = New Label()
-        txtNoPlat = New TextBox()
-        pnlGrid = New Panel()
-        DataGridView1 = New DataGridView()
-        ColNoPlat = New DataGridViewTextBoxColumn()
-        ColMasuk = New DataGridViewTextBoxColumn()
-        ColKeluar = New DataGridViewTextBoxColumn()
-        ColHarga = New DataGridViewTextBoxColumn()
-        ColJenis = New DataGridViewTextBoxColumn()
-        Column1 = New DataGridViewTextBoxColumn()
-        lblInfoUser = New Label()
-        lblTgl = New Label()
-        lblJmlKendaraan = New Label()
-        MenuStrip1.SuspendLayout()
-        ContextMenuStrip1.SuspendLayout()
-        pnlPlat.SuspendLayout()
-        pnlHarga.SuspendLayout()
-        pnlInput.SuspendLayout()
-        pnlGrid.SuspendLayout()
-        CType(DataGridView1, ComponentModel.ISupportInitialize).BeginInit()
-        SuspendLayout()
-        ' 
-        ' MenuStrip1
-        ' 
-        MenuStrip1.ImageScalingSize = New Size(24, 24)
-        MenuStrip1.Items.AddRange(New ToolStripItem() {SToolStripMenuItem, AdminToolStripMenuItem, BToolStripMenuItem})
-        MenuStrip1.Location = New Point(0, 0)
-        MenuStrip1.Name = "MenuStrip1"
-        MenuStrip1.Padding = New Padding(5, 2, 0, 2)
-        MenuStrip1.Size = New Size(929, 28)
-        MenuStrip1.TabIndex = 0
-        MenuStrip1.Text = "MenuStrip1"
-        ' 
-        ' SToolStripMenuItem
-        ' 
-        SToolStripMenuItem.DropDownItems.AddRange(New ToolStripItem() {ProfileToolStripMenuItem, LogoutToolStripMenuItem})
-        SToolStripMenuItem.Name = "SToolStripMenuItem"
-        SToolStripMenuItem.Size = New Size(67, 24)
-        SToolStripMenuItem.Text = "Sistem"
-        ' 
-        ' ProfileToolStripMenuItem
-        ' 
-        ProfileToolStripMenuItem.Name = "ProfileToolStripMenuItem"
-        ProfileToolStripMenuItem.Size = New Size(139, 26)
-        ProfileToolStripMenuItem.Text = "Profile"
-        ' 
-        ' LogoutToolStripMenuItem
-        ' 
-        LogoutToolStripMenuItem.Name = "LogoutToolStripMenuItem"
-        LogoutToolStripMenuItem.Size = New Size(139, 26)
-        LogoutToolStripMenuItem.Text = "Logout"
-        ' 
-        ' AdminToolStripMenuItem
-        ' 
-        AdminToolStripMenuItem.DropDownItems.AddRange(New ToolStripItem() {KendaraanLanggananToolStripMenuItem, LaporanPendapatanToolStripMenuItem})
-        AdminToolStripMenuItem.Name = "AdminToolStripMenuItem"
-        AdminToolStripMenuItem.Size = New Size(67, 24)
-        AdminToolStripMenuItem.Text = "Admin"
-        ' 
-        ' KendaraanLanggananToolStripMenuItem
-        ' 
-        KendaraanLanggananToolStripMenuItem.Name = "KendaraanLanggananToolStripMenuItem"
-        KendaraanLanggananToolStripMenuItem.Size = New Size(240, 26)
-        KendaraanLanggananToolStripMenuItem.Text = "Kendaraan Langganan"
-        ' 
-        ' LaporanPendapatanToolStripMenuItem
-        ' 
-        LaporanPendapatanToolStripMenuItem.Name = "LaporanPendapatanToolStripMenuItem"
-        LaporanPendapatanToolStripMenuItem.Size = New Size(240, 26)
-        LaporanPendapatanToolStripMenuItem.Text = "Laporan Pendapatan"
-        ' 
-        ' BToolStripMenuItem
-        ' 
-        BToolStripMenuItem.DropDownItems.AddRange(New ToolStripItem() {BantuanToolStripMenuItem, TentangToolStripMenuItem})
-        BToolStripMenuItem.Name = "BToolStripMenuItem"
-        BToolStripMenuItem.Size = New Size(77, 24)
-        BToolStripMenuItem.Text = "Bantuan"
-        ' 
-        ' BantuanToolStripMenuItem
-        ' 
-        BantuanToolStripMenuItem.Name = "BantuanToolStripMenuItem"
-        BantuanToolStripMenuItem.Size = New Size(224, 26)
-        BantuanToolStripMenuItem.Text = "Bantuan"
-        ' 
-        ' TentangToolStripMenuItem
-        ' 
-        TentangToolStripMenuItem.Name = "TentangToolStripMenuItem"
-        TentangToolStripMenuItem.Size = New Size(224, 26)
-        TentangToolStripMenuItem.Text = "Tentang"
-        ' 
-        ' ContextMenuStrip1
-        ' 
-        ContextMenuStrip1.ImageScalingSize = New Size(24, 24)
-        ContextMenuStrip1.Items.AddRange(New ToolStripItem() {DeleteToolStripMenuItem})
-        ContextMenuStrip1.Name = "ContextMenuStrip1"
-        ContextMenuStrip1.Size = New Size(123, 28)
-        ' 
-        ' DeleteToolStripMenuItem
-        ' 
-        DeleteToolStripMenuItem.Name = "DeleteToolStripMenuItem"
-        DeleteToolStripMenuItem.Size = New Size(122, 24)
-        DeleteToolStripMenuItem.Text = "Delete"
-        ' 
-        ' pnlPlat
-        ' 
-        pnlPlat.BorderStyle = BorderStyle.Fixed3D
-        pnlPlat.Controls.Add(lblPlat)
-        pnlPlat.Dock = DockStyle.Top
-        pnlPlat.Location = New Point(0, 28)
-        pnlPlat.Margin = New Padding(2)
-        pnlPlat.Name = "pnlPlat"
-        pnlPlat.Size = New Size(929, 121)
-        pnlPlat.TabIndex = 2
-        ' 
-        ' lblPlat
-        ' 
-        lblPlat.AutoSize = True
-        lblPlat.Font = New Font("Segoe UI", 72F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        lblPlat.Location = New Point(138, -21)
-        lblPlat.Margin = New Padding(2, 0, 2, 0)
-        lblPlat.Name = "lblPlat"
-        lblPlat.Size = New Size(652, 159)
-        lblPlat.TabIndex = 0
-        lblPlat.Text = "R 6872 ZH"
-        ' 
-        ' pnlHarga
-        ' 
-        pnlHarga.BorderStyle = BorderStyle.Fixed3D
-        pnlHarga.Controls.Add(lblHarga)
-        pnlHarga.Location = New Point(10, 154)
-        pnlHarga.Margin = New Padding(2)
-        pnlHarga.Name = "pnlHarga"
-        pnlHarga.Size = New Size(381, 79)
-        pnlHarga.TabIndex = 0
-        ' 
-        ' lblHarga
-        ' 
-        lblHarga.AutoSize = True
-        lblHarga.Font = New Font("Segoe UI", 22F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        lblHarga.Location = New Point(2, 13)
-        lblHarga.Margin = New Padding(2, 0, 2, 0)
-        lblHarga.Name = "lblHarga"
-        lblHarga.Size = New Size(79, 50)
-        lblHarga.TabIndex = 0
-        lblHarga.Text = "Rp."
-        ' 
-        ' pnlInput
-        ' 
-        pnlInput.BorderStyle = BorderStyle.Fixed3D
-        pnlInput.Controls.Add(lblInfoJenis)
-        pnlInput.Controls.Add(lblTekan)
-        pnlInput.Controls.Add(lblInputPlat)
-        pnlInput.Controls.Add(lblJenis)
-        pnlInput.Controls.Add(txtNoPlat)
-        pnlInput.Location = New Point(10, 237)
-        pnlInput.Margin = New Padding(2)
-        pnlInput.Name = "pnlInput"
-        pnlInput.Size = New Size(381, 121)
-        pnlInput.TabIndex = 3
-        ' 
-        ' lblInfoJenis
-        ' 
-        lblInfoJenis.AutoSize = True
-        lblInfoJenis.Location = New Point(284, 18)
-        lblInfoJenis.Margin = New Padding(2, 0, 2, 0)
-        lblInfoJenis.Name = "lblInfoJenis"
-        lblInfoJenis.Size = New Size(53, 20)
-        lblInfoJenis.TabIndex = 4
-        lblInfoJenis.Text = "Label1"
-        ' 
-        ' lblTekan
-        ' 
-        lblTekan.AutoSize = True
-        lblTekan.Font = New Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        lblTekan.Location = New Point(-2, 73)
-        lblTekan.Margin = New Padding(2, 0, 2, 0)
-        lblTekan.Name = "lblTekan"
-        lblTekan.Size = New Size(227, 20)
-        lblTekan.TabIndex = 3
-        lblTekan.Text = "Tekan Enter untuk Masuk / Keluar"
-        ' 
-        ' lblInputPlat
-        ' 
-        lblInputPlat.AutoSize = True
-        lblInputPlat.Location = New Point(3, 18)
-        lblInputPlat.Margin = New Padding(2, 0, 2, 0)
-        lblInputPlat.Name = "lblInputPlat"
-        lblInputPlat.Size = New Size(75, 20)
-        lblInputPlat.TabIndex = 2
-        lblInputPlat.Text = "Input Plat:"
-        ' 
-        ' lblJenis
-        ' 
-        lblJenis.AutoSize = True
-        lblJenis.Font = New Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        lblJenis.Location = New Point(-2, 53)
-        lblJenis.Margin = New Padding(2, 0, 2, 0)
-        lblJenis.Name = "lblJenis"
-        lblJenis.Size = New Size(395, 20)
-        lblJenis.TabIndex = 1
-        lblJenis.Text = "F1 - Motor, F2 - Mobil, F3 - Taksi, F4 - Sepeda, F5 - Bis/Truk"
-        ' 
-        ' txtNoPlat
-        ' 
-        txtNoPlat.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        txtNoPlat.Location = New Point(84, 11)
-        txtNoPlat.Margin = New Padding(2)
-        txtNoPlat.Name = "txtNoPlat"
-        txtNoPlat.Size = New Size(196, 34)
-        txtNoPlat.TabIndex = 0
-        ' 
-        ' pnlGrid
-        ' 
-        pnlGrid.AutoScroll = True
-        pnlGrid.Controls.Add(DataGridView1)
-        pnlGrid.Location = New Point(394, 154)
-        pnlGrid.Margin = New Padding(2)
-        pnlGrid.Name = "pnlGrid"
-        pnlGrid.Size = New Size(525, 328)
-        pnlGrid.TabIndex = 4
-        ' 
-        ' DataGridView1
-        ' 
-        DataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DataGridView1.Columns.AddRange(New DataGridViewColumn() {ColNoPlat, ColMasuk, ColKeluar, ColHarga, ColJenis, Column1})
-        DataGridView1.ContextMenuStrip = ContextMenuStrip1
-        DataGridView1.Dock = DockStyle.Fill
-        DataGridView1.Location = New Point(0, 0)
-        DataGridView1.Margin = New Padding(2)
-        DataGridView1.Name = "DataGridView1"
-        DataGridView1.RowHeadersWidth = 62
-        DataGridView1.Size = New Size(525, 328)
-        DataGridView1.TabIndex = 0
-        ' 
-        ' ColNoPlat
-        ' 
-        ColNoPlat.HeaderText = "No Plat"
-        ColNoPlat.MinimumWidth = 8
-        ColNoPlat.Name = "ColNoPlat"
-        ColNoPlat.Width = 150
-        ' 
-        ' ColMasuk
-        ' 
-        ColMasuk.HeaderText = "Masuk"
-        ColMasuk.MinimumWidth = 8
-        ColMasuk.Name = "ColMasuk"
-        ColMasuk.Width = 150
-        ' 
-        ' ColKeluar
-        ' 
-        ColKeluar.HeaderText = "Keluar"
-        ColKeluar.MinimumWidth = 8
-        ColKeluar.Name = "ColKeluar"
-        ColKeluar.Width = 150
-        ' 
-        ' ColHarga
-        ' 
-        ColHarga.HeaderText = "Harga"
-        ColHarga.MinimumWidth = 8
-        ColHarga.Name = "ColHarga"
-        ColHarga.Width = 150
-        ' 
-        ' ColJenis
-        ' 
-        ColJenis.HeaderText = "Jenis"
-        ColJenis.MinimumWidth = 8
-        ColJenis.Name = "ColJenis"
-        ColJenis.Width = 150
-        ' 
-        ' Column1
-        ' 
-        Column1.HeaderText = "id"
-        Column1.MinimumWidth = 6
-        Column1.Name = "Column1"
-        Column1.ReadOnly = True
-        Column1.Visible = False
-        Column1.Width = 125
-        ' 
-        ' lblInfoUser
-        ' 
-        lblInfoUser.AutoSize = True
-        lblInfoUser.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        lblInfoUser.Location = New Point(13, 374)
-        lblInfoUser.Margin = New Padding(2, 0, 2, 0)
-        lblInfoUser.Name = "lblInfoUser"
-        lblInfoUser.Size = New Size(87, 20)
-        lblInfoUser.TabIndex = 5
-        lblInfoUser.Text = "Informasi -"
-        ' 
-        ' lblTgl
-        ' 
-        lblTgl.AutoSize = True
-        lblTgl.Location = New Point(14, 394)
-        lblTgl.Margin = New Padding(2, 0, 2, 0)
-        lblTgl.Name = "lblTgl"
-        lblTgl.Size = New Size(68, 20)
-        lblTgl.TabIndex = 6
-        lblTgl.Text = "Tanggal: "
-        ' 
-        ' lblJmlKendaraan
-        ' 
-        lblJmlKendaraan.AutoSize = True
-        lblJmlKendaraan.Location = New Point(14, 414)
-        lblJmlKendaraan.Margin = New Padding(2, 0, 2, 0)
-        lblJmlKendaraan.Name = "lblJmlKendaraan"
-        lblJmlKendaraan.Size = New Size(310, 20)
-        lblJmlKendaraan.TabIndex = 7
-        lblJmlKendaraan.Text = "0 Motor, 0 Mobil, 0 Taksi, 0 Sepeda, 0 Bis/Truk" & vbCrLf
-        ' 
-        ' frmUtama
-        ' 
-        AutoScaleDimensions = New SizeF(8F, 20F)
-        AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(929, 491)
-        Controls.Add(lblJmlKendaraan)
-        Controls.Add(lblTgl)
-        Controls.Add(lblInfoUser)
-        Controls.Add(pnlGrid)
-        Controls.Add(pnlInput)
-        Controls.Add(pnlHarga)
-        Controls.Add(pnlPlat)
-        Controls.Add(MenuStrip1)
-        KeyPreview = True
-        MainMenuStrip = MenuStrip1
-        Margin = New Padding(2)
-        MaximizeBox = False
-        Name = "frmUtama"
-        StartPosition = FormStartPosition.CenterScreen
-        Text = "Parkir System v.1.0"
-        MenuStrip1.ResumeLayout(False)
-        MenuStrip1.PerformLayout()
-        ContextMenuStrip1.ResumeLayout(False)
-        pnlPlat.ResumeLayout(False)
-        pnlPlat.PerformLayout()
-        pnlHarga.ResumeLayout(False)
-        pnlHarga.PerformLayout()
-        pnlInput.ResumeLayout(False)
-        pnlInput.PerformLayout()
-        pnlGrid.ResumeLayout(False)
-        CType(DataGridView1, ComponentModel.ISupportInitialize).EndInit()
-        ResumeLayout(False)
-        PerformLayout()
+        Me.components = New System.ComponentModel.Container()
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.SToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ProfileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.LogoutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.AdminToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.KendaraanLanggananToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.LaporanPendapatanToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.BToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.BantuanToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.TentangToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
+        Me.DeleteToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.pnlPlat = New System.Windows.Forms.Panel()
+        Me.lblPlat = New System.Windows.Forms.Label()
+        Me.pnlHarga = New System.Windows.Forms.Panel()
+        Me.lblHarga = New System.Windows.Forms.Label()
+        Me.pnlInput = New System.Windows.Forms.Panel()
+        Me.lblInfoJenis = New System.Windows.Forms.Label()
+        Me.lblTekan = New System.Windows.Forms.Label()
+        Me.lblInputPlat = New System.Windows.Forms.Label()
+        Me.lblJenis = New System.Windows.Forms.Label()
+        Me.txtNoPlat = New System.Windows.Forms.TextBox()
+        Me.pnlGrid = New System.Windows.Forms.Panel()
+        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.ColNoPlat = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ColMasuk = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ColKeluar = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ColHarga = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ColJenis = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.lblInfoUser = New System.Windows.Forms.Label()
+        Me.lblTgl = New System.Windows.Forms.Label()
+        Me.lblJmlKendaraan = New System.Windows.Forms.Label()
+        Me.MenuStrip1.SuspendLayout()
+        Me.ContextMenuStrip1.SuspendLayout()
+        Me.pnlPlat.SuspendLayout()
+        Me.pnlHarga.SuspendLayout()
+        Me.pnlInput.SuspendLayout()
+        Me.pnlGrid.SuspendLayout()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.SuspendLayout()
+        '
+        'MenuStrip1
+        '
+        Me.MenuStrip1.ImageScalingSize = New System.Drawing.Size(24, 24)
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SToolStripMenuItem, Me.AdminToolStripMenuItem, Me.BToolStripMenuItem})
+        Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
+        Me.MenuStrip1.Name = "MenuStrip1"
+        Me.MenuStrip1.Padding = New System.Windows.Forms.Padding(5, 2, 0, 2)
+        Me.MenuStrip1.Size = New System.Drawing.Size(929, 28)
+        Me.MenuStrip1.TabIndex = 0
+        Me.MenuStrip1.Text = "MenuStrip1"
+        '
+        'SToolStripMenuItem
+        '
+        Me.SToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ProfileToolStripMenuItem, Me.LogoutToolStripMenuItem})
+        Me.SToolStripMenuItem.Name = "SToolStripMenuItem"
+        Me.SToolStripMenuItem.Size = New System.Drawing.Size(67, 24)
+        Me.SToolStripMenuItem.Text = "Sistem"
+        '
+        'ProfileToolStripMenuItem
+        '
+        Me.ProfileToolStripMenuItem.Name = "ProfileToolStripMenuItem"
+        Me.ProfileToolStripMenuItem.Size = New System.Drawing.Size(139, 26)
+        Me.ProfileToolStripMenuItem.Text = "Profile"
+        '
+        'LogoutToolStripMenuItem
+        '
+        Me.LogoutToolStripMenuItem.Name = "LogoutToolStripMenuItem"
+        Me.LogoutToolStripMenuItem.Size = New System.Drawing.Size(139, 26)
+        Me.LogoutToolStripMenuItem.Text = "Logout"
+        '
+        'AdminToolStripMenuItem
+        '
+        Me.AdminToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.KendaraanLanggananToolStripMenuItem, Me.LaporanPendapatanToolStripMenuItem})
+        Me.AdminToolStripMenuItem.Name = "AdminToolStripMenuItem"
+        Me.AdminToolStripMenuItem.Size = New System.Drawing.Size(67, 24)
+        Me.AdminToolStripMenuItem.Text = "Admin"
+        '
+        'KendaraanLanggananToolStripMenuItem
+        '
+        Me.KendaraanLanggananToolStripMenuItem.Name = "KendaraanLanggananToolStripMenuItem"
+        Me.KendaraanLanggananToolStripMenuItem.Size = New System.Drawing.Size(240, 26)
+        Me.KendaraanLanggananToolStripMenuItem.Text = "Kendaraan Langganan"
+        '
+        'LaporanPendapatanToolStripMenuItem
+        '
+        Me.LaporanPendapatanToolStripMenuItem.Name = "LaporanPendapatanToolStripMenuItem"
+        Me.LaporanPendapatanToolStripMenuItem.Size = New System.Drawing.Size(240, 26)
+        Me.LaporanPendapatanToolStripMenuItem.Text = "Laporan Pendapatan"
+        '
+        'BToolStripMenuItem
+        '
+        Me.BToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.BantuanToolStripMenuItem, Me.TentangToolStripMenuItem})
+        Me.BToolStripMenuItem.Name = "BToolStripMenuItem"
+        Me.BToolStripMenuItem.Size = New System.Drawing.Size(77, 24)
+        Me.BToolStripMenuItem.Text = "Bantuan"
+        '
+        'BantuanToolStripMenuItem
+        '
+        Me.BantuanToolStripMenuItem.Name = "BantuanToolStripMenuItem"
+        Me.BantuanToolStripMenuItem.Size = New System.Drawing.Size(146, 26)
+        Me.BantuanToolStripMenuItem.Text = "Bantuan"
+        '
+        'TentangToolStripMenuItem
+        '
+        Me.TentangToolStripMenuItem.Name = "TentangToolStripMenuItem"
+        Me.TentangToolStripMenuItem.Size = New System.Drawing.Size(146, 26)
+        Me.TentangToolStripMenuItem.Text = "Tentang"
+        '
+        'ContextMenuStrip1
+        '
+        Me.ContextMenuStrip1.ImageScalingSize = New System.Drawing.Size(24, 24)
+        Me.ContextMenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.DeleteToolStripMenuItem})
+        Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
+        Me.ContextMenuStrip1.Size = New System.Drawing.Size(123, 28)
+        '
+        'DeleteToolStripMenuItem
+        '
+        Me.DeleteToolStripMenuItem.Name = "DeleteToolStripMenuItem"
+        Me.DeleteToolStripMenuItem.Size = New System.Drawing.Size(122, 24)
+        Me.DeleteToolStripMenuItem.Text = "Delete"
+        '
+        'pnlPlat
+        '
+        Me.pnlPlat.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.pnlPlat.Controls.Add(Me.lblPlat)
+        Me.pnlPlat.Dock = System.Windows.Forms.DockStyle.Top
+        Me.pnlPlat.Location = New System.Drawing.Point(0, 28)
+        Me.pnlPlat.Margin = New System.Windows.Forms.Padding(2)
+        Me.pnlPlat.Name = "pnlPlat"
+        Me.pnlPlat.Size = New System.Drawing.Size(929, 137)
+        Me.pnlPlat.TabIndex = 2
+        '
+        'lblPlat
+        '
+        Me.lblPlat.AutoSize = True
+        Me.lblPlat.Font = New System.Drawing.Font("Segoe UI", 72.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblPlat.Location = New System.Drawing.Point(138, -17)
+        Me.lblPlat.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblPlat.Name = "lblPlat"
+        Me.lblPlat.Size = New System.Drawing.Size(652, 159)
+        Me.lblPlat.TabIndex = 0
+        Me.lblPlat.Text = "R 6872 ZH"
+        '
+        'pnlHarga
+        '
+        Me.pnlHarga.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.pnlHarga.Controls.Add(Me.lblHarga)
+        Me.pnlHarga.Location = New System.Drawing.Point(10, 165)
+        Me.pnlHarga.Margin = New System.Windows.Forms.Padding(2)
+        Me.pnlHarga.Name = "pnlHarga"
+        Me.pnlHarga.Size = New System.Drawing.Size(381, 64)
+        Me.pnlHarga.TabIndex = 0
+        '
+        'lblHarga
+        '
+        Me.lblHarga.AutoSize = True
+        Me.lblHarga.Font = New System.Drawing.Font("Segoe UI", 22.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblHarga.Location = New System.Drawing.Point(2, 10)
+        Me.lblHarga.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblHarga.Name = "lblHarga"
+        Me.lblHarga.Size = New System.Drawing.Size(79, 50)
+        Me.lblHarga.TabIndex = 0
+        Me.lblHarga.Text = "Rp."
+        '
+        'pnlInput
+        '
+        Me.pnlInput.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.pnlInput.Controls.Add(Me.lblInfoJenis)
+        Me.pnlInput.Controls.Add(Me.lblTekan)
+        Me.pnlInput.Controls.Add(Me.lblInputPlat)
+        Me.pnlInput.Controls.Add(Me.lblJenis)
+        Me.pnlInput.Controls.Add(Me.txtNoPlat)
+        Me.pnlInput.Location = New System.Drawing.Point(10, 232)
+        Me.pnlInput.Margin = New System.Windows.Forms.Padding(2)
+        Me.pnlInput.Name = "pnlInput"
+        Me.pnlInput.Size = New System.Drawing.Size(381, 98)
+        Me.pnlInput.TabIndex = 3
+        '
+        'lblInfoJenis
+        '
+        Me.lblInfoJenis.AutoSize = True
+        Me.lblInfoJenis.Location = New System.Drawing.Point(284, 14)
+        Me.lblInfoJenis.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblInfoJenis.Name = "lblInfoJenis"
+        Me.lblInfoJenis.Size = New System.Drawing.Size(48, 16)
+        Me.lblInfoJenis.TabIndex = 4
+        Me.lblInfoJenis.Text = "Label1"
+        '
+        'lblTekan
+        '
+        Me.lblTekan.AutoSize = True
+        Me.lblTekan.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTekan.Location = New System.Drawing.Point(-2, 58)
+        Me.lblTekan.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblTekan.Name = "lblTekan"
+        Me.lblTekan.Size = New System.Drawing.Size(227, 20)
+        Me.lblTekan.TabIndex = 3
+        Me.lblTekan.Text = "Tekan Enter untuk Masuk / Keluar"
+        '
+        'lblInputPlat
+        '
+        Me.lblInputPlat.AutoSize = True
+        Me.lblInputPlat.Location = New System.Drawing.Point(3, 14)
+        Me.lblInputPlat.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblInputPlat.Name = "lblInputPlat"
+        Me.lblInputPlat.Size = New System.Drawing.Size(64, 16)
+        Me.lblInputPlat.TabIndex = 2
+        Me.lblInputPlat.Text = "Input Plat:"
+        '
+        'lblJenis
+        '
+        Me.lblJenis.AutoSize = True
+        Me.lblJenis.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblJenis.Location = New System.Drawing.Point(-2, 42)
+        Me.lblJenis.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblJenis.Name = "lblJenis"
+        Me.lblJenis.Size = New System.Drawing.Size(395, 20)
+        Me.lblJenis.TabIndex = 1
+        Me.lblJenis.Text = "F1 - Motor, F2 - Mobil, F3 - Taksi, F4 - Sepeda, F5 - Bis/Truk"
+        '
+        'txtNoPlat
+        '
+        Me.txtNoPlat.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtNoPlat.Location = New System.Drawing.Point(84, 9)
+        Me.txtNoPlat.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtNoPlat.Name = "txtNoPlat"
+        Me.txtNoPlat.Size = New System.Drawing.Size(196, 34)
+        Me.txtNoPlat.TabIndex = 0
+        '
+        'pnlGrid
+        '
+        Me.pnlGrid.AutoScroll = True
+        Me.pnlGrid.Controls.Add(Me.DataGridView1)
+        Me.pnlGrid.Location = New System.Drawing.Point(394, 123)
+        Me.pnlGrid.Margin = New System.Windows.Forms.Padding(2)
+        Me.pnlGrid.Name = "pnlGrid"
+        Me.pnlGrid.Size = New System.Drawing.Size(525, 262)
+        Me.pnlGrid.TabIndex = 4
+        '
+        'DataGridView1
+        '
+        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.ColNoPlat, Me.ColMasuk, Me.ColKeluar, Me.ColHarga, Me.ColJenis, Me.Column1})
+        Me.DataGridView1.ContextMenuStrip = Me.ContextMenuStrip1
+        Me.DataGridView1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.DataGridView1.Location = New System.Drawing.Point(0, 0)
+        Me.DataGridView1.Margin = New System.Windows.Forms.Padding(2)
+        Me.DataGridView1.Name = "DataGridView1"
+        Me.DataGridView1.RowHeadersWidth = 62
+        Me.DataGridView1.Size = New System.Drawing.Size(525, 262)
+        Me.DataGridView1.TabIndex = 0
+        '
+        'ColNoPlat
+        '
+        Me.ColNoPlat.HeaderText = "No Plat"
+        Me.ColNoPlat.MinimumWidth = 8
+        Me.ColNoPlat.Name = "ColNoPlat"
+        Me.ColNoPlat.Width = 150
+        '
+        'ColMasuk
+        '
+        Me.ColMasuk.HeaderText = "Masuk"
+        Me.ColMasuk.MinimumWidth = 8
+        Me.ColMasuk.Name = "ColMasuk"
+        Me.ColMasuk.Width = 150
+        '
+        'ColKeluar
+        '
+        Me.ColKeluar.HeaderText = "Keluar"
+        Me.ColKeluar.MinimumWidth = 8
+        Me.ColKeluar.Name = "ColKeluar"
+        Me.ColKeluar.Width = 150
+        '
+        'ColHarga
+        '
+        Me.ColHarga.HeaderText = "Harga"
+        Me.ColHarga.MinimumWidth = 8
+        Me.ColHarga.Name = "ColHarga"
+        Me.ColHarga.Width = 150
+        '
+        'ColJenis
+        '
+        Me.ColJenis.HeaderText = "Jenis"
+        Me.ColJenis.MinimumWidth = 8
+        Me.ColJenis.Name = "ColJenis"
+        Me.ColJenis.Width = 150
+        '
+        'Column1
+        '
+        Me.Column1.HeaderText = "id"
+        Me.Column1.MinimumWidth = 6
+        Me.Column1.Name = "Column1"
+        Me.Column1.ReadOnly = True
+        Me.Column1.Visible = False
+        Me.Column1.Width = 125
+        '
+        'lblInfoUser
+        '
+        Me.lblInfoUser.AutoSize = True
+        Me.lblInfoUser.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblInfoUser.Location = New System.Drawing.Point(13, 341)
+        Me.lblInfoUser.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblInfoUser.Name = "lblInfoUser"
+        Me.lblInfoUser.Size = New System.Drawing.Size(87, 20)
+        Me.lblInfoUser.TabIndex = 5
+        Me.lblInfoUser.Text = "Informasi -"
+        '
+        'lblTgl
+        '
+        Me.lblTgl.AutoSize = True
+        Me.lblTgl.Location = New System.Drawing.Point(14, 357)
+        Me.lblTgl.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblTgl.Name = "lblTgl"
+        Me.lblTgl.Size = New System.Drawing.Size(64, 16)
+        Me.lblTgl.TabIndex = 6
+        Me.lblTgl.Text = "Tanggal: "
+        '
+        'lblJmlKendaraan
+        '
+        Me.lblJmlKendaraan.AutoSize = True
+        Me.lblJmlKendaraan.Location = New System.Drawing.Point(14, 376)
+        Me.lblJmlKendaraan.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblJmlKendaraan.Name = "lblJmlKendaraan"
+        Me.lblJmlKendaraan.Size = New System.Drawing.Size(281, 16)
+        Me.lblJmlKendaraan.TabIndex = 7
+        Me.lblJmlKendaraan.Text = "0 Motor, 0 Mobil, 0 Taksi, 0 Sepeda, 0 Bis/Truk" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        '
+        'frmUtama
+        '
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.ClientSize = New System.Drawing.Size(929, 405)
+        Me.Controls.Add(Me.lblJmlKendaraan)
+        Me.Controls.Add(Me.lblTgl)
+        Me.Controls.Add(Me.lblInfoUser)
+        Me.Controls.Add(Me.pnlGrid)
+        Me.Controls.Add(Me.pnlInput)
+        Me.Controls.Add(Me.pnlHarga)
+        Me.Controls.Add(Me.pnlPlat)
+        Me.Controls.Add(Me.MenuStrip1)
+        Me.KeyPreview = True
+        Me.MainMenuStrip = Me.MenuStrip1
+        Me.Margin = New System.Windows.Forms.Padding(2)
+        Me.MaximizeBox = False
+        Me.Name = "frmUtama"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
+        Me.Text = "Parkir System v.1.0"
+        Me.MenuStrip1.ResumeLayout(False)
+        Me.MenuStrip1.PerformLayout()
+        Me.ContextMenuStrip1.ResumeLayout(False)
+        Me.pnlPlat.ResumeLayout(False)
+        Me.pnlPlat.PerformLayout()
+        Me.pnlHarga.ResumeLayout(False)
+        Me.pnlHarga.PerformLayout()
+        Me.pnlInput.ResumeLayout(False)
+        Me.pnlInput.PerformLayout()
+        Me.pnlGrid.ResumeLayout(False)
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.ResumeLayout(False)
+        Me.PerformLayout()
+
     End Sub
 
     Friend WithEvents MenuStrip1 As MenuStrip

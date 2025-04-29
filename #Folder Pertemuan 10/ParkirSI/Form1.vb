@@ -39,6 +39,5 @@ Public Class frmLogin
     End Sub
     Private Sub frmLogin_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         CreateConnection()
-        Me.ReportViewer1.RefreshReport
     End Sub
 End Class
