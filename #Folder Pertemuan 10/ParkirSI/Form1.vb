@@ -21,7 +21,8 @@ Public Class frmLogin
             myDataReader.Close()
             pengguna = txtUsername.Text
             ppassword = txtPassword.Text
-            frmUtama.lblInfoUser.Text = "Informasi - (User: " & pengguna & ")"
+            ModuleLogin.LoggedInUser = pengguna
+            frmUtama.lblInfoUser.Text = "Informasi - (User: " & ModuleLogin.LoggedInUser & ")"
             frmUtama.lblTgl.Text = "Tangggal : " & Now.Day & " - " & Now.Month & " - " & Now.Year
             frmUtama.RefreshGrid()
             frmUtama.HitungJumlah()

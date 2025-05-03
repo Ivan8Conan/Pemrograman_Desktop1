@@ -61,7 +61,7 @@ Public Class frmUtama
         Dim sql As String
         Dim harga As Integer = 0
         Dim nomor As String = String.Empty
-        pengguna = "anton"
+        pengguna = ModuleLogin.LoggedInUser
         If e.KeyCode = Keys.F1 Then
             jns = "Motor"
         ElseIf e.KeyCode = Keys.F2 Then
@@ -164,6 +164,7 @@ Public Class frmUtama
     End Sub
     Private Sub frmUtama_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         lblTgl.Text = "Tangggal : " & Now.Day & " - " & Now.Month & " - " & Now.Year
+        lblInfoUser.Text = LoggedInUser
     End Sub
     Private Sub LogoutToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles LogoutToolStripMenuItem.Click
         Me.Close()
