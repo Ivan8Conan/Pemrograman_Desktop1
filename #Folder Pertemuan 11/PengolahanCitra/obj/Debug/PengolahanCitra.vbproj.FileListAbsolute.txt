@@ -1,0 +1,16 @@
+C:\Users\Ivan\OneDrive - Duta Wacana Christian University\SEMESTER 2\Pemrograman_Desktop1\#Folder Pertemuan 11\PengolahanCitra\obj\Debug\PengolahanCitra.vbproj.AssemblyReference.cache
+C:\Users\Ivan\OneDrive - Duta Wacana Christian University\SEMESTER 2\Pemrograman_Desktop1\#Folder Pertemuan 11\PengolahanCitra\obj\Debug\PengolahanCitra.frmUtama.resources
+C:\Users\Ivan\OneDrive - Duta Wacana Christian University\SEMESTER 2\Pemrograman_Desktop1\#Folder Pertemuan 11\PengolahanCitra\obj\Debug\PengolahanCitra.frmHistogram.resources
+C:\Users\Ivan\OneDrive - Duta Wacana Christian University\SEMESTER 2\Pemrograman_Desktop1\#Folder Pertemuan 11\PengolahanCitra\obj\Debug\PengolahanCitra.Resources.resources
+C:\Users\Ivan\OneDrive - Duta Wacana Christian University\SEMESTER 2\Pemrograman_Desktop1\#Folder Pertemuan 11\PengolahanCitra\obj\Debug\PengolahanCitra.frmUtama.aa.resources
+C:\Users\Ivan\OneDrive - Duta Wacana Christian University\SEMESTER 2\Pemrograman_Desktop1\#Folder Pertemuan 11\PengolahanCitra\obj\Debug\PengolahanCitra.vbproj.GenerateResource.cache
+C:\Users\Ivan\OneDrive - Duta Wacana Christian University\SEMESTER 2\Pemrograman_Desktop1\#Folder Pertemuan 11\PengolahanCitra\obj\Debug\PengolahanCitra.vbproj.CoreCompileInputs.cache
+C:\Users\Ivan\OneDrive - Duta Wacana Christian University\SEMESTER 2\Pemrograman_Desktop1\#Folder Pertemuan 11\PengolahanCitra\bin\Debug\PengolahanCitra.exe.config
+C:\Users\Ivan\OneDrive - Duta Wacana Christian University\SEMESTER 2\Pemrograman_Desktop1\#Folder Pertemuan 11\PengolahanCitra\bin\Debug\PengolahanCitra.exe
+C:\Users\Ivan\OneDrive - Duta Wacana Christian University\SEMESTER 2\Pemrograman_Desktop1\#Folder Pertemuan 11\PengolahanCitra\bin\Debug\PengolahanCitra.pdb
+C:\Users\Ivan\OneDrive - Duta Wacana Christian University\SEMESTER 2\Pemrograman_Desktop1\#Folder Pertemuan 11\PengolahanCitra\bin\Debug\PengolahanCitra.xml
+C:\Users\Ivan\OneDrive - Duta Wacana Christian University\SEMESTER 2\Pemrograman_Desktop1\#Folder Pertemuan 11\PengolahanCitra\bin\Debug\aa\PengolahanCitra.resources.dll
+C:\Users\Ivan\OneDrive - Duta Wacana Christian University\SEMESTER 2\Pemrograman_Desktop1\#Folder Pertemuan 11\PengolahanCitra\obj\Debug\aa\PengolahanCitra.resources.dll
+C:\Users\Ivan\OneDrive - Duta Wacana Christian University\SEMESTER 2\Pemrograman_Desktop1\#Folder Pertemuan 11\PengolahanCitra\obj\Debug\PengolahanCitra.exe
+C:\Users\Ivan\OneDrive - Duta Wacana Christian University\SEMESTER 2\Pemrograman_Desktop1\#Folder Pertemuan 11\PengolahanCitra\obj\Debug\PengolahanCitra.xml
+C:\Users\Ivan\OneDrive - Duta Wacana Christian University\SEMESTER 2\Pemrograman_Desktop1\#Folder Pertemuan 11\PengolahanCitra\obj\Debug\PengolahanCitra.pdb
