@@ -44,6 +44,11 @@
     End Sub
 
     Private Sub GreyscaleToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles GreyscaleToolStripMenuItem.Click
+        If PictureBox1.Image Is Nothing Then
+            MessageBox.Show("Silakan buka gambar terlebih dahulu sebelum melakukan pengolahan.", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            Exit Sub
+        End If
+
         Dim r, g, b, gray As Integer
         Dim bmp = New Bitmap(PictureBox1.Image)
 
@@ -170,7 +175,9 @@
     Private Sub TajamkanToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles TajamkanToolStripMenuItem.Click
         Dim r, g, b As Integer
         Dim bmp = New Bitmap(PictureBox1.Image)
-        Dim kernel As Integer() = {-1, -1, -1, -1, 8, -1, -1, -1, -1}
+        'Dim kernel As Integer() = {-1, -1, -1, -1, 8, -1, -1, -1, -1}
+        Dim kernel As Integer() = {-2, -1, 0, -1, 1, 1, 0, 1, 2}
+
 
         For bar As Integer = 1 To PictureBox1.Image.Height - 2
             For kol As Integer = 1 To PictureBox1.Image.Width - 2
@@ -233,9 +240,22 @@
     End Sub
 
     Private Sub FlipHorizontalToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles FlipHorizontalToolStripMenuItem.Click
-        Dim bmp = New Bitmap(PictureBox1.Image)
-        bmp.RotateFlip(RotateFlipType.RotateNoneFlipX)
-        PictureBox1.Image = bmp
+        'Dim bmp = New Bitmap(PictureBox1.Image)
+        'bmp.RotateFlip(RotateFlipType.RotateNoneFlipX)
+        'PictureBox1.Image = bmp
+        Dim srcBmp As New Bitmap(PictureBox1.Image)
+        Dim width As Integer = srcBmp.Width
+        Dim height As Integer = srcBmp.Height
+        Dim Bmp As New Bitmap(width, height)
+
+        For y As Integer = 0 To height - 1
+            For x As Integer = 0 To width - 1
+                Dim pixelColor As Color = srcBmp.GetPixel(x, y)
+                Bmp.SetPixel(width - 1 - x, y, pixelColor)
+            Next
+        Next
+
+        PictureBox1.Image = Bmp
     End Sub
 
     Private Sub FlipVertikalToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles FlipVertikalToolStripMenuItem.Click
