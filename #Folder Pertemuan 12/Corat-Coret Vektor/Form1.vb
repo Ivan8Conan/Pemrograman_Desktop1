@@ -258,72 +258,33 @@ Public Class frmUtama
     End Sub
 
     Private Sub btnUndo_Click(sender As Object, e As EventArgs) Handles btnUndo.Click
-        If history.Count > 0 Then
-            If TextBox1.Lines.Length > 0 Then
-                Dim lastLineCount As Integer = 1
-                Dim lastLine As String = TextBox1.Lines(TextBox1.Lines.Length - 1)
-
-                If lastLine.StartsWith("o ") Then
-                    Dim parts() As String = lastLine.Split(" "c)
-                    If parts.Length > 1 AndAlso parts(1) = "ukuran" Then
-                        lastLineCount = 1
-                    End If
-                End If
-
-                For i As Integer = 0 To lastLineCount - 1
-                    If TextBox1.Lines.Length > 0 Then
-                        TextBox1.Lines = TextBox1.Lines.Take(TextBox1.Lines.Length - 1).ToArray()
-                    End If
-                Next
-            End If
-
-            Dim a As Integer = TextBox1.Lines.Count
-            btnBersihkan.PerformClick()
-            For i As Integer = 0 To a - 1
-                Dim teksbaris As String = TextBox1.Lines(i)
-                Dim pecah() As String
-                pecah = teksbaris.Split(" "c)
-                On Error Resume Next
-                pecah(1) = pecah(1).Trim(" "c)
-                Select Case pecah(1)
-                    Case "warnatepi"
-                        warnatepi = Color.FromArgb(CByte(pecah(2)), CByte(pecah(3)), CByte(pecah(4)))
-                        tepi.Color = warnatepi
-                    Case "warnaisian"
-                        warnaisian = Color.FromArgb(CByte(pecah(2)), CByte(pecah(3)), CByte(pecah(4)))
-                        isian.Color = warnaisian
-                    Case "garis"
-                        Using g As Graphics = Graphics.FromImage(PictureBox1.Image)
-                            g.DrawLine(tepi, CInt(pecah(2)), CInt(pecah(3)), CInt(pecah(4)), CInt(pecah(5)))
-                        End Using
-                    Case "kotak"
-                        Dim rect As New Rectangle(CInt(pecah(2)), CInt(pecah(3)), CInt(pecah(4)) - CInt(pecah(2)), CInt(pecah(5)) - CInt(pecah(3)))
-                        Using g As Graphics = Graphics.FromImage(PictureBox1.Image)
-                            g.DrawRectangle(tepi, rect)
-                        End Using
-                    Case "elips"
-                        Dim rect As New Rectangle(CInt(pecah(2)), CInt(pecah(3)), CInt(pecah(4)) - CInt(pecah(2)), CInt(pecah(5)) - CInt(pecah(3)))
-                        Using g As Graphics = Graphics.FromImage(PictureBox1.Image)
-                            g.DrawEllipse(tepi, rect)
-                        End Using
-                    Case "kotakisi"
-                        Dim rect As New Rectangle(CInt(pecah(2)), CInt(pecah(3)), CInt(pecah(4)) - CInt(pecah(2)), CInt(pecah(5)) - CInt(pecah(3)))
-                        Using g As Graphics = Graphics.FromImage(PictureBox1.Image)
-                            g.FillRectangle(isian, rect)
-                        End Using
-                    Case "elipsisi"
-                        Dim rect As New Rectangle(CInt(pecah(2)), CInt(pecah(3)), CInt(pecah(4)) - CInt(pecah(2)), CInt(pecah(5)) - CInt(pecah(3)))
-                        Using g As Graphics = Graphics.FromImage(PictureBox1.Image)
-                            g.FillEllipse(isian, rect)
-                        End Using
-                    Case "ukuran"
-                        tepi.Width = CInt(pecah(2))
-                End Select
-            Next
-            PictureBox1.Invalidate()
-        Else
+        If TextBox1.Lines.Length = 0 Then
             MessageBox.Show("Tidak ada aksi yang bisa di-undo.", "Undo", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            Return
         End If
+
+        Dim lines As List(Of String) = TextBox1.Lines.ToList()
+        Dim jumlahBarisDihapus As Integer = 0
+
+        For i As Integer = lines.Count - 1 To 0 Step -1
+            jumlahBarisDihapus += 1
+            Dim baris = lines(i)
+            If baris.StartsWith("o ") Then
+                Dim kata() = baris.Split(" "c)
+                If kata.Length > 1 Then
+                    Select Case kata(1)
+                        Case "garis", "kotak", "kotakisi", "elips", "elipsisi"
+                            Exit For
+                    End Select
+                End If
+            End If
+        Next
+
+        lines.RemoveRange(lines.Count - jumlahBarisDihapus, jumlahBarisDihapus)
+        TextBox1.Lines = lines.ToArray()
+
+        btnBersihkan.PerformClick()
+        btnGbrUlang.PerformClick()
     End Sub
 
     Private Sub BukaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles BukaToolStripMenuItem.Click
