@@ -325,4 +325,23 @@ Public Class frmUtama
             MessageBox.Show("Tidak ada aksi yang bisa di-undo.", "Undo", MessageBoxButtons.OK, MessageBoxIcon.Information)
         End If
     End Sub
+
+    Private Sub BukaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles BukaToolStripMenuItem.Click
+        Dim openDialog As New OpenFileDialog()
+        openDialog.Filter = "PNG Image|*.png|JPEG Image|*.jpg|Bitmap Image|*.bmp"
+        openDialog.Title = "Buka Gambar"
+
+        If openDialog.ShowDialog() = DialogResult.OK Then
+            Try
+                Dim path As String = openDialog.FileName
+                bmp = New Bitmap(path)
+                PictureBox1.Image = bmp
+
+                history.Clear()
+                TextBox1.Clear()
+            Catch ex As Exception
+                MessageBox.Show("Terjadi kesalahan saat membuka gambar: " & ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            End Try
+        End If
+    End Sub
 End Class
