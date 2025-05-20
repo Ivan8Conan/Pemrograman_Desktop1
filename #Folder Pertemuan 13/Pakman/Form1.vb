@@ -1,33 +1,51 @@
 ﻿Imports System.Drawing
 Imports System.Windows.Forms
 Public Class Form1
-    'map (peta papan permainan) 
-    Dim map = {{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-               {0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0},
-               {0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0},
-               {0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0},
-               {0, 1, 0, 0, 0, 1, 0, 1, 1, 0, 0},
-               {0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0},
-               {0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0},
-               {0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0},
-               {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}}
+    'map (peta papan permainan) - diperluas untuk 3 hantu
+    Dim map = {{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+               {0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0},
+               {0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0},
+               {0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0},
+               {0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 1, 0},
+               {0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0},
+               {0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0},
+               {0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0},
+               {0, 1, 0, 1, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0},
+               {0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0},
+               {0, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, 0},
+               {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}}
+
     'kumpulan variabel 
     Dim tsz = 40        'tile size (ukuran grid/tilenya) 
     Dim pacx = 1        'pakman itu di petak x mana sekarang 
     Dim pacy = 1        '              petak y 
-    Dim enmx = 9        'musuh itu di petak x berapa 
-    Dim enmy = 7        '             petak y 
-    Dim goalx = 1       'goal (pintu keluar pakman di petak x brp 
-    Dim goaly = 7       'goal di petak y berapa 
+
+    ' Array untuk posisi hantu (x, y) dan mode pergerakan
+    ' Mode: 0 = normal chase, 1 = random, 2 = patrol
+    Dim ghosts(2, 2) As Integer
+
+    Dim goalx = 13      'goal (pintu keluar pakman di petak x brp 
+    Dim goaly = 10      'goal di petak y berapa 
     Dim bmp As Bitmap
     Dim oldpacx = 0
     Dim oldpacy = 0
+
+    ' Variabel untuk mode hantu dan waktu pergantian mode
+    Dim ghostModeTicks As Integer = 0
+    Dim ghostModeInterval As Integer = 30 ' Ganti mode setiap 30 tick
 
     ' Variabel untuk arah hadap pakman
     Dim pacDirection As Integer = 1  ' 0 = atas, 1 = kanan, 2 = bawah, 3 = kiri
 
     ' Variabel untuk nyawa
     Dim lives As Integer = 3  ' Nyawa awal Pakman
+
+    ' Variabel untuk patrol pattern hantu
+    Dim patrolPointIndex(2) As Integer
+    Dim patrolPoints As New List(Of Point())
+
+    ' Flag untuk menandai apakah game sedang dimulai ulang
+    Dim isRestarting As Boolean = False
 
     'deklarasi sprite citra yang digunakan 
     Dim wall As Image = Image.FromFile("C:\Users\Ivan\OneDrive - Duta Wacana Christian University\SEMESTER 2\Semester 6\Pemrograman Desktop\Latihan\bata.png")
@@ -39,17 +57,44 @@ Public Class Form1
     Dim pacDown As Image = Image.FromFile("C:\Users\Ivan\OneDrive - Duta Wacana Christian University\SEMESTER 2\Semester 6\Pemrograman Desktop\Latihan\pakman_down.png")
     Dim pacLeft As Image = Image.FromFile("C:\Users\Ivan\OneDrive - Duta Wacana Christian University\SEMESTER 2\Semester 6\Pemrograman Desktop\Latihan\pakman_left.png")
 
-    Dim enm As Image = Image.FromFile("C:\Users\Ivan\OneDrive - Duta Wacana Christian University\SEMESTER 2\Semester 6\Pemrograman Desktop\Latihan\hantu3.png")
+    ' Array untuk sprite hantu (berbeda warna)
+    Dim ghostSprites(2) As Image
     Dim goal As Image = Image.FromFile("C:\Users\Ivan\OneDrive - Duta Wacana Christian University\SEMESTER 2\Semester 6\Pemrograman Desktop\Latihan\omah.jpg")
 
     ' Sprite untuk nyawa
     Dim lifeSprite As Image = Image.FromFile("C:\Users\Ivan\OneDrive - Duta Wacana Christian University\SEMESTER 2\Semester 6\Pemrograman Desktop\Latihan\pakman.png")
 
+    Private Sub InitializePatrolPoints()
+        ' Definisikan jalur patroli untuk masing-masing hantu
+        patrolPoints.Add(New Point() {
+            New Point(13, 1), New Point(13, 7), New Point(7, 7), New Point(7, 1)
+        })
+
+        patrolPoints.Add(New Point() {
+            New Point(1, 10), New Point(6, 10), New Point(6, 5), New Point(1, 5)
+        })
+
+        patrolPoints.Add(New Point() {
+            New Point(1, 1), New Point(13, 1), New Point(13, 10), New Point(1, 10)
+        })
+
+        ' Inisialisasi indeks patrol untuk tiap hantu
+        For i As Integer = 0 To 2
+            patrolPointIndex(i) = 0
+        Next
+    End Sub
+
     Private Sub Redraw()
         Dim g As Graphics = Graphics.FromImage(PictureBox1.Image)
+        g.Clear(Color.Black)
+
+        ' Dapatkan dimensi peta (rows & columns)
+        Dim rows As Integer = map.GetUpperBound(0) + 1
+        Dim cols As Integer = map.GetUpperBound(1) + 1
+
         'gambarkan background (jalan dan tembok) 
-        For y = 0 To 8                   '0 to 8 yaitu tinggi map - 1 
-            For x = 0 To 10              '0 to 10 yaitu lebar map - 1 
+        For y As Integer = 0 To rows - 1
+            For x As Integer = 0 To cols - 1
                 If map(y, x) = 0 Then
                     g.DrawImage(wall, x * tsz, y * tsz, tsz, tsz)
                 Else
@@ -70,8 +115,10 @@ Public Class Form1
                 g.DrawImage(pacLeft, pacx * tsz, pacy * tsz, tsz, tsz)
         End Select
 
-        'gambarkan musuh 
-        g.DrawImage(enm, enmx * tsz, enmy * tsz, tsz, tsz)
+        'gambarkan hantu-hantu
+        For i As Integer = 0 To 2
+            g.DrawImage(ghostSprites(i), ghosts(i, 0) * tsz, ghosts(i, 1) * tsz, tsz, tsz)
+        Next
 
         'gambarkan goal 
         g.DrawImage(goal, goalx * tsz, goaly * tsz, tsz, tsz)
@@ -85,6 +132,8 @@ Public Class Form1
     End Sub
 
     Private Sub Form1_KeyDown(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles Me.KeyDown
+        If isRestarting Then Return ' Jangan proses input saat restarting
+
         Select Case e.KeyCode
             Case Keys.Up
                 ' Ubah arah ke atas
@@ -114,87 +163,287 @@ Public Class Form1
     End Sub
 
     Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-        'sesuaikan dulu ukuran picturebox dan form 
-        PictureBox1.Width = (map.length / (map.GetUpperBound(0) + 1)) * tsz
-        PictureBox1.Height = (map.GetUpperBound(0) + 1) * tsz
+        ' Load sprite hantu
+        ghostSprites(0) = Image.FromFile("C:\Users\Ivan\OneDrive - Duta Wacana Christian University\SEMESTER 2\Semester 6\Pemrograman Desktop\Latihan\hantu1.png")
+        ghostSprites(1) = Image.FromFile("C:\Users\Ivan\OneDrive - Duta Wacana Christian University\SEMESTER 2\Semester 6\Pemrograman Desktop\Latihan\hantu2.png")
+        ghostSprites(2) = Image.FromFile("C:\Users\Ivan\OneDrive - Duta Wacana Christian University\SEMESTER 2\Semester 6\Pemrograman Desktop\Latihan\hantu3.png")
+
+        ' Inisialisasi posisi hantu dan mode pergerakannya
+        ghosts(0, 0) = 13 ' x
+        ghosts(0, 1) = 1  ' y
+        ghosts(0, 2) = 0  ' mode (chase)
+
+        ghosts(1, 0) = 13 ' x
+        ghosts(1, 1) = 5  ' y
+        ghosts(1, 2) = 1  ' mode (random)
+
+        ghosts(2, 0) = 13 ' x
+        ghosts(2, 1) = 10 ' y
+        ghosts(2, 2) = 2  ' mode (patrol)
+
+        ' Inisialisasi patrol points untuk hantu
+        InitializePatrolPoints()
+
+        ' Sesuaikan ukuran picturebox dan form berdasarkan ukuran peta
+        Dim rows As Integer = map.GetUpperBound(0) + 1
+        Dim cols As Integer = map.GetUpperBound(1) + 1
+
+        PictureBox1.Width = cols * tsz
+        PictureBox1.Height = rows * tsz
         Me.Width = PictureBox1.Width + tsz
-        Me.Height = PictureBox1.Height + tsz  ' Ukuran form tidak perlu ditambah banyak karena nyawa sekarang di atas
+        Me.Height = PictureBox1.Height + tsz + 40 ' Tambahkan ruang untuk title bar dan statusbar
+
         bmp = New Bitmap(PictureBox1.Width, PictureBox1.Height)
         PictureBox1.Image = bmp
+
+        ' Set judul form
+        Me.Text = "Pakman Game - 3 Ghosts"
+
+        ' Aktifkan timer
+        Timer1.Enabled = True
+        Timer1.Interval = 200 ' Set interval timer (ms)
+
         Redraw()
     End Sub
 
-    ' Prosedur untuk mereset posisi Pakman dan musuh
+    ' Prosedur untuk mereset posisi Pakman dan hantu
     Private Sub ResetPositions()
+        isRestarting = True
+
         ' Kembalikan Pakman ke posisi awal
         pacx = 1
         pacy = 1
         pacDirection = 1  ' Menghadap kanan
 
-        ' Kembalikan musuh ke posisi awal
-        enmx = 9
-        enmy = 7
+        ' Kembalikan hantu ke posisi awal
+        ghosts(0, 0) = 13 ' x
+        ghosts(0, 1) = 1  ' y
+
+        ghosts(1, 0) = 13 ' x
+        ghosts(1, 1) = 5  ' y
+
+        ghosts(2, 0) = 13 ' x
+        ghosts(2, 1) = 10 ' y
+
+        ' Tunggu sebentar
+        System.Threading.Thread.Sleep(500)
+
+        isRestarting = False
+    End Sub
+
+    ' Fungsi untuk mengecek apakah arah gerakan valid untuk hantu
+    Private Function IsValidMove(ByVal y As Integer, ByVal x As Integer) As Boolean
+        If y < 0 OrElse y >= map.GetUpperBound(0) + 1 OrElse x < 0 OrElse x >= map.GetUpperBound(1) + 1 Then
+            Return False
+        End If
+        Return map(y, x) = 1
+    End Function
+
+    ' Fungsi untuk mendapatkan daftar arah yang valid dari posisi tertentu
+    Private Function GetValidDirections(ByVal y As Integer, ByVal x As Integer) As List(Of Integer)
+        Dim validDirections As New List(Of Integer)
+
+        ' Cek semua arah (0=atas, 1=kanan, 2=bawah, 3=kiri)
+        If IsValidMove(y - 1, x) Then validDirections.Add(0) ' Atas
+        If IsValidMove(y, x + 1) Then validDirections.Add(1) ' Kanan
+        If IsValidMove(y + 1, x) Then validDirections.Add(2) ' Bawah
+        If IsValidMove(y, x - 1) Then validDirections.Add(3) ' Kiri
+
+        Return validDirections
+    End Function
+
+    ' Fungsi untuk menghitung jarak Manhattan antara dua titik
+    Private Function ManhattanDistance(ByVal x1 As Integer, ByVal y1 As Integer, ByVal x2 As Integer, ByVal y2 As Integer) As Integer
+        Return Math.Abs(x1 - x2) + Math.Abs(y1 - y2)
+    End Function
+
+    ' Fungsi untuk menggerakkan hantu dengan mode chase
+    Private Sub MoveGhostChase(ByVal ghostIndex As Integer)
+        Dim x As Integer = ghosts(ghostIndex, 0)
+        Dim y As Integer = ghosts(ghostIndex, 1)
+
+        ' Dapatkan daftar arah yang valid
+        Dim validDirections As List(Of Integer) = GetValidDirections(y, x)
+
+        ' Jika tidak ada arah yang valid, hantu tidak bergerak
+        If validDirections.Count = 0 Then Return
+
+        ' Cari arah terbaik untuk mengejar Pakman
+        Dim bestDirection As Integer = validDirections(0)
+        Dim shortestDistance As Integer = Integer.MaxValue
+
+        For Each direction As Integer In validDirections
+            Dim newX As Integer = x
+            Dim newY As Integer = y
+
+            Select Case direction
+                Case 0 ' Atas
+                    newY -= 1
+                Case 1 ' Kanan
+                    newX += 1
+                Case 2 ' Bawah
+                    newY += 1
+                Case 3 ' Kiri
+                    newX -= 1
+            End Select
+
+            ' Hitung jarak ke Pakman dari posisi baru
+            Dim distance As Integer = ManhattanDistance(newX, newY, pacx, pacy)
+
+            ' Jika jarak lebih dekat, simpan arah ini
+            If distance < shortestDistance Then
+                shortestDistance = distance
+                bestDirection = direction
+            End If
+        Next
+
+        ' Gerakkan hantu ke arah terbaik
+        Select Case bestDirection
+            Case 0 ' Atas
+                ghosts(ghostIndex, 1) -= 1
+            Case 1 ' Kanan
+                ghosts(ghostIndex, 0) += 1
+            Case 2 ' Bawah
+                ghosts(ghostIndex, 1) += 1
+            Case 3 ' Kiri
+                ghosts(ghostIndex, 0) -= 1
+        End Select
+    End Sub
+
+    ' Fungsi untuk menggerakkan hantu dengan mode random
+    Private Sub MoveGhostRandom(ByVal ghostIndex As Integer)
+        Dim x As Integer = ghosts(ghostIndex, 0)
+        Dim y As Integer = ghosts(ghostIndex, 1)
+
+        ' Dapatkan daftar arah yang valid
+        Dim validDirections As List(Of Integer) = GetValidDirections(y, x)
+
+        ' Jika tidak ada arah yang valid, hantu tidak bergerak
+        If validDirections.Count = 0 Then Return
+
+        ' Pilih arah secara acak
+        Dim random As New Random()
+        Dim randomIndex As Integer = random.Next(0, validDirections.Count)
+        Dim direction As Integer = validDirections(randomIndex)
+
+        ' Gerakkan hantu ke arah acak
+        Select Case direction
+            Case 0 ' Atas
+                ghosts(ghostIndex, 1) -= 1
+            Case 1 ' Kanan
+                ghosts(ghostIndex, 0) += 1
+            Case 2 ' Bawah
+                ghosts(ghostIndex, 1) += 1
+            Case 3 ' Kiri
+                ghosts(ghostIndex, 0) -= 1
+        End Select
+    End Sub
+
+    Private Sub MoveGhostPatrol(ByVal ghostIndex As Integer)
+        Dim x As Integer = ghosts(ghostIndex, 0)
+        Dim y As Integer = ghosts(ghostIndex, 1)
+
+        ' Dapatkan titik tujuan patroli saat ini
+        Dim target As Point = patrolPoints(ghostIndex)(patrolPointIndex(ghostIndex))
+
+        ' Jika hantu sudah di titik tujuan, beralih ke titik berikutnya
+        If x = target.X AndAlso y = target.Y Then
+            patrolPointIndex(ghostIndex) = (patrolPointIndex(ghostIndex) + 1) Mod patrolPoints(ghostIndex).Length
+            target = patrolPoints(ghostIndex)(patrolPointIndex(ghostIndex))
+        End If
+
+        ' Dapatkan daftar arah yang valid
+        Dim validDirections As List(Of Integer) = GetValidDirections(y, x)
+
+        ' Jika tidak ada arah yang valid, hantu tidak bergerak
+        If validDirections.Count = 0 Then Return
+
+        ' Cari arah terbaik untuk menuju titik patroli
+        Dim bestDirection As Integer = validDirections(0)
+        Dim shortestDistance As Integer = Integer.MaxValue
+
+        For Each direction As Integer In validDirections
+            Dim newX As Integer = x
+            Dim newY As Integer = y
+
+            Select Case direction
+                Case 0 ' Atas
+                    newY -= 1
+                Case 1 ' Kanan
+                    newX += 1
+                Case 2 ' Bawah
+                    newY += 1
+                Case 3 ' Kiri
+                    newX -= 1
+            End Select
+
+            Dim distance As Integer = ManhattanDistance(newX, newY, target.X, target.Y)
+
+            If distance < shortestDistance Then
+                shortestDistance = distance
+                bestDirection = direction
+            End If
+        Next
+
+        ' Gerakkan hantu ke arah terbaik
+        Select Case bestDirection
+            Case 0 ' Atas
+                ghosts(ghostIndex, 1) -= 1
+            Case 1 ' Kanan
+                ghosts(ghostIndex, 0) += 1
+            Case 2 ' Bawah
+                ghosts(ghostIndex, 1) += 1
+            Case 3 ' Kiri
+                ghosts(ghostIndex, 0) -= 1
+        End Select
     End Sub
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
-        'engine untuk musuh 
-        Dim jarakx, jaraky As Integer
-        Dim arah As Integer  'arah musuh, 0 atas, 1 kanan, 2 bawah, 3 kiri 
-        'cek jarak pakman dg musuh. kalau lebih jauh di sb x, kejar di x dulu 
-        'kalau lebih dekat di sb y, kejar ke sb y dulu 
-        jarakx = Math.Abs(pacx - enmx)
-        jaraky = Math.Abs(pacy - enmy)
-        If jarakx > jaraky Then         'jika lebih jauh jarak kejar di x
-            If (pacx - enmx > 0) Then   'jika pakman di kanan 
-                arah = 1                'arah kanan 
-            Else                        'jika tidak 
-                arah = 3                'arah kiri 
-            End If
+        If isRestarting Then Return
+
+        ghostModeTicks += 1
+
+        ' Ganti mode hantu secara periodik untuk variasi
+        If ghostModeTicks >= ghostModeInterval Then
+            ghostModeTicks = 0
+            ghosts(0, 2) = (ghosts(0, 2) + 1) Mod 3
+            ghosts(1, 2) = (ghosts(1, 2) + 1) Mod 3
+            ghosts(2, 2) = (ghosts(2, 2) + 1) Mod 3
         End If
-        If jarakx < jaraky Then
-            If (pacy - enmy > 0) Then   'jika pakman di bawah 
-                arah = 2                'arah bawah 
-            Else                        'jika tidak 
-                arah = 0                'arah atas 
-            End If
-        End If
-        If (oldpacx = pacx) And (oldpacy = pacy) Then  'jika stop 
-            arah = Math.Floor(Rnd() * 4)
-        End If
-        Select Case arah
-            Case 0
-                If map(enmy - 1, enmx) = 1 Then
-                    enmy = enmy - 1
-                End If
-            Case 2
-                If map(enmy + 1, enmx) = 1 Then
-                    enmy = enmy + 1
-                End If
-            Case 1
-                If map(enmy, enmx + 1) = 1 Then
-                    enmx = enmx + 1
-                End If
-            Case 3
-                If map(enmy, enmx - 1) = 1 Then
-                    enmx = enmx - 1
-                End If
-        End Select
+
+        ' Gerakkan hantu-hantu berdasarkan modenya
+        For i As Integer = 0 To 2
+            Select Case ghosts(i, 2)
+                Case 0 ' Chase mode
+                    MoveGhostChase(i)
+                Case 1 ' Random mode
+                    MoveGhostRandom(i)
+                Case 2 ' Patrol mode
+                    MoveGhostPatrol(i)
+            End Select
+        Next
+
         oldpacx = pacx
         oldpacy = pacy
         Redraw()
 
-        'cek apakah posisi pakman sama dg musuh 
-        If (pacx = enmx) And (pacy = enmy) Then
-            lives = lives - 1  ' Kurangi nyawa
-            If lives <= 0 Then
-                Timer1.Enabled = False
-                MsgBox("Pakman Dies! Game Over!")
-            Else
-                MsgBox("Pakman tertangkap! Nyawa tersisa: " & lives)
-                ResetPositions()
-            End If
-        End If
+        ' Cek apakah Pakman tertangkap oleh salah satu hantu
+        For i As Integer = 0 To 2
+            If (pacx = ghosts(i, 0)) And (pacy = ghosts(i, 1)) Then
+                lives = lives - 1
 
+                If lives <= 0 Then
+                    Timer1.Enabled = False
+                    MsgBox("Pakman Dies! Game Over!")
+                Else
+                    MsgBox("Pakman tertangkap! Nyawa tersisa: " & lives)
+                    ResetPositions()
+                    Return
+                End If
+            End If
+        Next
+
+        ' Cek apakah Pakman mencapai goal
         If (pacx = goalx) And (pacy = goaly) Then
             Timer1.Enabled = False
             MsgBox("Pakman safe at Home!")

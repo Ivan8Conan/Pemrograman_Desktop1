@@ -7,7 +7,7 @@
       "RelativeMoniker": "D:0:0:{492216AB-5C8D-4285-8224-8F5870EBC115}|Pakman.vbproj|solutionrelative:form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{492216AB-5C8D-4285-8224-8F5870EBC115}|Pakman.vbproj|c:\\users\\ivan\\onedrive - duta wacana christian university\\semester 2\\pemrograman_desktop1\\#folder pertemuan 13\\pakman\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "AbsoluteMoniker": "D:0:0:{492216AB-5C8D-4285-8224-8F5870EBC115}|Pakman.vbproj|C:\\Users\\Ivan\\OneDrive - Duta Wacana Christian University\\SEMESTER 2\\Pemrograman_Desktop1\\#Folder Pertemuan 13\\Pakman\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
       "RelativeMoniker": "D:0:0:{492216AB-5C8D-4285-8224-8F5870EBC115}|Pakman.vbproj|solutionrelative:form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     }
   ],
@@ -36,7 +36,7 @@
               "RelativeDocumentMoniker": "Form1.vb",
               "ToolTip": "C:\\Users\\Ivan\\OneDrive - Duta Wacana Christian University\\SEMESTER 2\\Pemrograman_Desktop1\\#Folder Pertemuan 13\\Pakman\\Form1.vb",
               "RelativeToolTip": "Form1.vb",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAxAAAAAAAAAA==",
+              "ViewState": "AgIAAFEBAAAAAAAAAADwv1UBAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2025-05-20T00:59:23.278Z",
               "EditorCaption": ""
@@ -50,8 +50,7 @@
               "ToolTip": "C:\\Users\\Ivan\\OneDrive - Duta Wacana Christian University\\SEMESTER 2\\Pemrograman_Desktop1\\#Folder Pertemuan 13\\Pakman\\Form1.vb [Design]",
               "RelativeToolTip": "Form1.vb [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-05-20T00:55:16.674Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-05-20T00:55:16.674Z"
             }
           ]
         }
